@@ -487,7 +487,7 @@ main.cards section.card.teclado {
 
 
 
-main.cards section.card.ukelele button {
+main.cards section.card.ukulele button {
     background: linear-gradient(to right, #9F66FF, #DFCBFF);
 }
 main.cards section.card.baixo button {
@@ -497,14 +497,14 @@ main.cards section.card.bateria button {
     background: linear-gradient(to right, #FE5F8F, #FFC7D9);
 }
 
-main.cards section.card.ukelele {
-    box-shadow: 20px 20px 50px -30px #DBC4FF;
+main.cards section.card.ukulele {
+    box-shadow: 20px 20px 50px -30px #fad389;
 }
 main.cards section.card.baixo {
-    box-shadow: 20px 20px 50px -30px #AFD6FF;
+    box-shadow: 20px 20px 50px -30px #9cf47c;
 }
 main.cards section.card.bateria {
-    box-shadow: 20px 20px 50px -30px #FFC1D5;
+    box-shadow: 20px 20px 50px -30px #f2d3ba;
 }
 
 
