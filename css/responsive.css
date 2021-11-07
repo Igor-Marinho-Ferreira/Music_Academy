@@ -1,0 +1,22 @@
+@media (max-width: 1280px) {
+
+    #navbar {
+        height: 350px;
+    }
+    
+    #navbar-container {
+        flex-direction: column;
+        padding: 20px 0;
+    }
+    
+    #navbar-items {
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+    }
+    
+    #navbar-items li:nth-child(2) {
+        border-top: 2px solid #333;
+        border-bottom: 1px solid #333;
+    }
+}
