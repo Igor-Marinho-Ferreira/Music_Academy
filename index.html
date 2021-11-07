@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" media="screen and (max-width: 1040px)" href="css/mobile.css">
+    <link rel="shortcut icon" type="imagex/png" href="./img/logositeico.ico">
+    <title>Music Academy</title>
+</head>
+
+<body>
+    <nav id="navbar">
+        <div id="navbar-container">
+            <a class="navbar-brand" href="index.html">
+            <img src="./img/logov2black.png" alt="" class="logo" />
+            <ul id="navbar-items">
+                <li><a href="siteprincipal.html">Explore</a></li>
+                <li><a href="#clients">Lista</a></li>
+                <li><a href="aprenda.html">Aprenda</a></li>
+                <li><a href="#gallery">Sobre</a></li>
+                <li><a>|</a></li>
+                <li><a href="cadastro.html">Entrar</a></li>
+                <li><a href="cadastro.html">Cadastro</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="slide">
+        <div class="slides">      
+            <div id="atual" class="videos">
+                <video autoplay="autoplay" muted="muted" >
+                    <source src="./movies/BackgroundONE.mp4" type="video/mp4" alt=""> 
+                </video>
+            </div>
+            <div class="videos">
+                <video autoplay="autoplay" muted="muted">
+                    <source src="./movies/BackgroundONE.mp4" type="video/mp4" alt=""> 
+                </video>
+            </div>
+            <div class="videos">
+                <video autoplay="autoplay" muted="muted">
+                    <source src="./movies/BackgroundONE.mp4" type="video/mp4" alt=""> 
+                </video>
+            </div>
+        </div>
+        <div id = "voltar" class="btns">
+            <i class="fas fa-chevron-left"></i>
+        </div>
+        <div id = "next" class="btns">
+            <i class="fas fa-chevron-right"></i>
+        </div>  
+        <div class="balls">
+            <div class=videoAtual id="0"></div>
+            <div id="1"></div>
+            <div id="2"></div>
+        </div>
+    </div>
+
+    <!-- About -->
+
+    <section id="features">
+        <div class="headline">O que fazemos</div>
+        <div id="features-container">
+            <div class="feature">
+                <i class="fas fa-tachometer-alt fa-3x"></i>
+                <span class="feature-title">Conteúdo musical</span>
+                <p>Nada de nada</p>
+            </div>
+            <div class="feature">
+                <i class="fas fa-code fa-3x"></i>
+                <span class="feature-title">Cursos</span>
+                <p>A mesma coisa que os concorrentes </p>
+            </div>
+            <div class="feature">
+                <i class="fas fa-layer-group fa-3x"></i>
+                <span class="feature-title">Acredita que nada?.</span>
+                <p>Nada</p>
+            </div>
+        </div>
+    </section>
+    <section id="goals">
+        <div class="headline">Nossos objetivos</div>
+        <div id="goals-container">
+            <div id="items">
+                <div class="item">
+                    <i class="fas fa-map-marked fa-2x color-primary"></i>
+                    <p>Oferecer o melhor conteúdo para todos</p>
+                </div>
+                <div class="item">
+                    <i class="fas fa-users fa-2x color-primary"></i>
+                    <p>Promover experiências de apreciação</p>
+                </div>
+                <div class="item">
+                    <i class="fas fa-glass-cheers fa-2x color-primary"></i>
+                    <p>Dinheiro</p>
+                </div>
+                <div class="item">
+                    <i class="fas fa-book-open fa-2x"></i>
+                    <p>Gerar interesse pela música</p>
+                </div>
+            </div>
+        </div>
+    </section>    
+ 	<!-- Acessi -->   
+    <div class="fabACESS"  ontouchstart="">
+        <button class="main" >
+            <i class="fas fa-universal-access fa-2x"></i>
+        </button>
+        <ul>
+          <li>
+            <button id="opcao1">
+            </button>
+          </li>
+        </ul>
+    </div>
+
+    <!-- Footer -->
+	<footer id="footer">
+		<div class="footer-content">
+			<img src="img/logov2.png" alt="" class="logo" />
+			<ul class="footer-menu">
+				<p>Empresa</p>
+				<li class="footer-menu-item">
+					Sobre
+				</li>
+				<li class="footer-menu-item">
+					Empregos
+				</li>
+			</ul>
+
+			<ul class="footer-menu">
+				<p>Comunidades</p>
+				<li class="footer-menu-item">
+					Para Artistas
+				</li>
+				<li class="footer-menu-item">
+					Desenvolvedores
+				</li>
+				<li class="footer-menu-item">
+					Investidores
+				</li>
+			</ul>
+
+			<ul class="footer-menu">
+				<p>Links úteis</p>
+				<li class="footer-menu-item">
+					Ajuda
+				</li>
+			</ul>
+
+			<div class="socials">
+				<i class="fab fa-instagram"></i>
+				<i class="fab fa-twitter"></i>
+				<i class="fab fa-facebook-f"></i>
+			</div>
+		</div>
+		<div class="footer-info">
+			<ul class="footer-info-items">
+			</ul>
+			<div class="rights">
+				<div class="country">
+					<p>Brasil</p>
+				</div>
+				<p>&copy; 2021 Eng.Comp</p>
+			</div>
+		</div>
+	</footer>
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/f9e19193d6.js" crossorigin="anonymous"></script>
+
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+    <!-- Our JS file -->
+    <script src="js/main.js"></script>
+    <!-- Slider -->
+    <script src="js/slider.js"></script>
+</body>
+
+</html>
