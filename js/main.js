@@ -23,11 +23,11 @@ window.addEventListener("scroll", function () {
     }
 });
 const controller = document.querySelector('input[type=range]');
-const radialProgress = document.querySelector('.RadialProgress');
+const radialProgress = document.querySelector('.RadialProgressGuitarra');
 
 const setProgress = (progress) => {
   const value = `${progress}%`;
-  radialProgress.style.setProperty('--progress', value)
+  radialProgress.style.setProperty('--progressGuitarra', value)
   radialProgress.innerHTML = value
   radialProgress.setAttribute('aria-valuenow', value)
 }

@@ -1034,11 +1034,13 @@ main.cards section.card.bateria {
     }
 }
 main.cardsLista {
+    
     display: flex;
     padding: 125px;
 }
 
 main.cardsLista section.card {
+    z-index: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1054,6 +1056,15 @@ main.cardsLista section.card:first-child {
     margin-left: 0;
 }
 
+main.cardsLista section.card .RadialProgressGuitarra {
+    width: 256px;
+    height: 256px;
+}
+
+main.cardsLista section.card .RadialProgressViolao {
+    width: 256px;
+    height: 256px;
+}
 main.cardsLista section.card .icon {
     width: 64px;
     height: 64px;
@@ -1107,15 +1118,11 @@ main.cardsLista section.card.teclado {
     box-shadow: 20px 20px 50px -30px #FFC1D5;
 }
 
-.div-lista{
-    background-image: url("./img/electricguitar.png");
-}
 
-.RadialProgress {
+.RadialProgressGuitarra {
     --hue: 220;
     --holesize: 65%;
     --track-bg: hsl(233 34% 92%);
-    
     
     block-size: 50vmin;
     inline-size: 50vmin;
@@ -1126,7 +1133,7 @@ main.cardsLista section.card.teclado {
     position: relative;
     font-weight: 700;
     font-size: max(10vmin, 1.4rem);
-    background-image: url("./img/electricguitar.png");
+    
     &::before {
             content: '';
             position: absolute;
@@ -1139,7 +1146,7 @@ main.cardsLista section.card.teclado {
             background: conic-gradient(
                 hsl(var(--hue) 100% 70%),
                 hsl(var(--hue) 100% 40%),
-                hsl(var(--hue) 100% 70%) var(--progress, 0%),
+                hsl(var(--hue) 100% 70%) var(--progressGuitarra, 0%),
                 var(--track-bg) var(--progress, 0%) 100%
             );
             
