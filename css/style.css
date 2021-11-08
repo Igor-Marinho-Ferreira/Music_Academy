@@ -134,8 +134,25 @@ a {
     margin: 15px 0;
     font-size: 1.2rem;
 }
-
-
+.main-btn{
+    height: 60px;
+    width: 250px;
+    background: #00bef4; 
+    border-radius: 6px; 
+    padding: 15px; 
+    cursor: pointer; 
+    color: #fff; 
+    border: none; 
+    font-size: 20px;
+    top: 50%;
+    left: 50%;
+    margin-top: 75px;
+    margin-left: 815px;
+}
+.main-btn:hover {
+    cursor: pointer;
+    background: #005C75;
+}
 
 /* Footer */
 #footer {
