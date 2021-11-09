@@ -16,7 +16,6 @@
             <a class="navbar-brand" href="index.html">
             <img src="./img/logov2black.png" alt="" class="logo" />
             <ul id="navbar-items">
-                <li><a href="index.html">Início</a></li>
                 <li><a href="lista.html">Lista</a></li>
                 <li><a href="aprenda.html">Aprenda</a></li>
                 <li><a href="sobre.html">Sobre</a></li>
@@ -39,7 +38,7 @@
         </div>
     </nav>
 
-    <div class="slide">
+    <div id= "topo" class="slide">
         <div class="slides">      
             <div id="atual" class="videos">
                 <video autoplay="autoplay" muted="muted" >
@@ -134,7 +133,14 @@
           </li>
         </ul>
     </div>
-
+ 	<!-- TOP -->   
+    <div datascroll="suave" data-anime="scroll">
+        <a href="#topo">
+            <div class="topoB">
+                <i class="fas fa-chevron-circle-up fa-3x"></i>            
+            </div>
+        </a>
+    </div>
     <!-- Footer -->
 	<footer id="footer">
 		<div class="footer-content">
@@ -200,10 +206,9 @@
     <script src="js/slider.js"></script>
     <!-- Dark mode -->
     <script src="js/darkmode.js"></script>
-    <script src="js/back-to-top.js"></script>
-    <!--Botão voltar ao topo-->
-    <section></section>
-    <a href="#" class="back-to-top"></a>
+    <!-- TOP -->
+    <script src="js/scroll-animation.js"></script>
+    <script src="js/scroll-suave.js"></script>
 
 </body>
 
