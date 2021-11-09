@@ -5,6 +5,7 @@ var videos = document.getElementById("atual")
 var rolar = true
 var next = document.getElementById('next')
 var voltar = document.getElementById('voltar')
+var tam_Imagem = 0
 
 for( let i= 0; i < quant.length; i++){
     var div = document.createElement("div")
