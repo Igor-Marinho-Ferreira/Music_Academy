@@ -65,6 +65,26 @@ a {
     margin-top: 5%;
     padding-top: 25px;
 }
+.headline-aprenda {
+    font-size: 2.2rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 25px;
+    letter-spacing: 2px;
+    margin-top: 5%;
+    padding-top: 25px;
+}
+.headline-lista {
+    font-size: 2.2rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 25px;
+    letter-spacing: 2px;
+    margin-top: 5%;
+    padding-top: 25px;
+}
 /* Navbar */
 
 #navbar {
@@ -72,7 +92,7 @@ a {
     background: #fff ;
     color: #eee;
     height: 80px;
-    position: fixed;
+    position: absolute;
 }
 
 #navbar-container {
@@ -110,48 +130,6 @@ a {
     color: #FFF;
 }
 
-/* Navbar Aprenda */
-#navbarAprenda {
-    width: 100%;
-    background: #fff ;
-    color: #eee;
-    height: 80px;
-}
-
-#navbarAprenda-container {
-    width: 80%;
-    height: 100%;
-    margin: auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.logo {
-	height: 50px;
-	width: auto;
-}
-
-#navbarAprenda-items {
-    display: flex;
-    list-style: none;
-    text-transform: uppercase;
-    color: #111;
-
-}
-
-#navbarAprenda-items li {
-    padding: 10px;
-}
-.navbarAprenda-brand {
-    padding: 0;
-    color: #FFF;
-}
-  
-.navbarAprenda-brand:hover {
-    color: #FFF;
-}
-
 /* About */
 #features {
     width: 100%;
@@ -159,6 +137,15 @@ a {
     color: #eee;
     padding: 50px;
     margin-top: 115px;/*mexer aqui*/
+
+}
+
+#features-aprenda {
+    width: 100%;
+    background: #222;
+    color: #eee;
+    padding: 50px;
+    margin-top: 0px;/*mexer aqui*/
 
 }
 
@@ -194,6 +181,21 @@ a {
     align-items: center;
 }
 
+#goals-sobre {
+    width: 100%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-left: 25px;
+    
+
+}
+#goals-container-sobre {
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    
+}
+
 #items {
     width: 650px;
 }
@@ -205,7 +207,15 @@ a {
     font-size: 1.2rem;
 }
 
+#items-sobre {
+    width: 650px;
+}
 
+#items-sobre .item-sobre {
+    top: 295px;
+    position: absolute;
+    margin-left: 850px;
+}
 
 /* Footer */
 #footer {
@@ -380,7 +390,7 @@ a {
 
 
 .textaprenda-container {
-    position: relative;
+    position: absolute;
     z-index: 1;
     text-align: left;
     margin-left: 125px;
@@ -388,7 +398,8 @@ a {
 
 .textaprenda-container h2 {
     font-family: arial, sans-serif;
-    padding-top: 40px;
+    margin-top: 25%;
+    margin-bottom: 30%;
     text-transform: uppercase;
 	font-size: 3rem;
 }
@@ -1120,9 +1131,9 @@ main.cards section.card.bateria {
     }
 }
 main.cardsLista {
-    
     display: flex;
-    padding: 125px;
+    margin-left: 150px;
+    margin-bottom: 50px;
 }
 
 main.cardsLista section.card {
@@ -1250,7 +1261,7 @@ main.cardsLista section.card.teclado {
     display: flex;
     align-items: center;
     z-index: 100;
-    position: fixed;
+    position: absolute;
     right: 210px;
     top: 28px;
   }
