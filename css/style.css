@@ -10,7 +10,11 @@ body{
 }
 :root {
     /* Cores dos elementos */
-    
+    --radial50-color: black;
+    --cardsLista-letra: black;
+    --cardlistamain-bg: white;
+    --letrasaprenda-color: black;
+    --backgroundcoloraprenda-color: #fff;
     --headline-color:black;
     --color-goals-items: black;
     --a-color: #000000;
@@ -127,7 +131,10 @@ body{
 
 [data-theme='dark'] {
    /* Cores dos elementos */
-   
+   --radial50-color: white;
+   --cardsLista-letra: white;
+   --cardlistamain-bg: #1c1c1c;
+   --letrasaprenda-color: #fff;
    --headline-color:white;
    --color-goals-items: white;
    --a-color: #FFF;
@@ -167,6 +174,7 @@ body{
    --balls-div-border-color: #fff;
 
    /* Cores dos Backgrounds */
+   --backgroundcoloraprenda-color: #1c1c1c;
    --color-background-goals:#1c1c1c;
    --color-background:#1c1c1c;
    --btn-bg: #111;
@@ -771,6 +779,7 @@ a {
   main.cards {
     display: flex;
     padding: 80px;
+    background-color: var(--backgroundcoloraprenda-color);
 }
 
 main.cards section.card {
@@ -801,6 +810,7 @@ main.cards section.card img {
 main.cards section.card h3 {
     font-size: 100%;
     margin: 16px 0;
+    color: var(--letrasaprenda-color);
 }
 
 main.cards section.card span {
@@ -808,6 +818,7 @@ main.cards section.card span {
     max-width: 240px;
     font-size: 80%;
     margin-bottom: 16px;
+    color: var(--letrasaprenda-color);
 }
 
 main.cards section.card button {
@@ -1394,6 +1405,7 @@ main.cardsLista {
     display: flex;
     margin-left: 150px;
     margin-bottom: 50px;
+    background: var(--cardlistamain-bg);
 }
 
 main.cardsLista section.card {
@@ -1434,6 +1446,7 @@ main.cardsLista section.card img {
 main.cardsLista section.card h3 {
     font-size: 100%;
     margin: 16px 0;
+    color: var(--cardsLista-letra);
 }
 
 main.cardsLista section.card span {
@@ -1441,6 +1454,7 @@ main.cardsLista section.card span {
     max-width: 240px;
     font-size: 80%;
     margin-bottom: 16px;
+    color: var(--cardsLista-letra);
 }
 
 main.cardsLista section.card button {
@@ -1451,7 +1465,7 @@ main.cardsLista section.card button {
     cursor: pointer;
     font-size: 80%;
     font-weight: 500;
-    color: var(--main-cardsLista-sec-card-btn-color);
+    color: var(--cardsLista-letra);
     margin-bottom: 16px 0;
 }
 main.cardsLista section.card.guitarra button {
@@ -1470,6 +1484,7 @@ main.cardsLista section.card.guitarra {
     --hue: 220;
     --holesize: 65%;
     --track-bg: hsl(233 34% 92%);
+    color: var(--radial50-color);
     
     block-size: 50vmin;
     inline-size: 50vmin;
@@ -1478,8 +1493,8 @@ main.cardsLista section.card.guitarra {
     display: grid;
     place-items: center;
     position: relative;
-    font-weight: 700;
-    font-size: max(10vmin, 1.4rem);
+    font-weight: 600;
+    font-size: max(10vmin, 1rem);
     
     &::before {
             content: '';
