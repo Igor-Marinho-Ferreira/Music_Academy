@@ -39,34 +39,45 @@
     </nav>
 
     <div id= "topo" class="slide">
-        <div class="slides">      
-            <div id="atual" class="videos">
-                <video autoplay="autoplay" loop="loop" muted="muted" >
-                    <source src="./movies/BackgroundONE.mp4" type="video/mp4" alt=""> 
-                </video>
-            </div>
-            <div class="videos">
-                <video autoplay="autoplay" loop="loop" muted="muted">
-                    <source src="./movies/Background2.mp4" type="video/mp4" alt=""> 
-                </video>
-            </div>
-            <div class="videos">
-                <video autoplay="autoplay" muted="muted">
-                    <source src="./movies/BackgroundONE.mp4" type="video/mp4" alt=""> 
-                </video>
-            </div>
+        <div class="slides">
+            <ul>
+                <div id="atual" class="videos">
+                    <video autoplay="autoplay" loop="loop" muted="muted" id="slider" >
+                        <source src="./movies/BackgroundONE.mp4" type="video/mp4" alt=""> 
+                    </video>
+                </div>
+                <div class="videos">
+                    <video autoplay="autoplay" loop="loop" muted="muted">
+                        <source src="./movies/Background2.mp4" type="video/mp4" alt=""> 
+                    </video>
+                </div>
+                <div class="videos">
+                    <video autoplay="autoplay" muted="muted">
+                        <source src="./movies/BackgroundONE.mp4" type="video/mp4" alt=""> 
+                    </video>
+                </div>
+                <div id = "voltar" class="btns">
+                    <i class="fas fa-chevron-left"></i>
+                </div>
+                <div id = "next" class="btns">
+                    <i class="fas fa-chevron-right" onclick="videoUrl('./movies/Background2.mp4')"></i>
+                </div>  
+                <div class="balls">
+                    <div class=videoAtual id="0"></div>
+                    <div id="1"></div>
+                    <div id="2"></div>
+                </div>
+            </ul>  
+
+
         </div>
-        <div id = "voltar" class="btns">
-            <i class="fas fa-chevron-left"></i>
-        </div>
-        <div id = "next" class="btns">
-            <i class="fas fa-chevron-right"></i>
-        </div>  
-        <div class="balls">
-            <div class=videoAtual id="0"></div>
-            <div id="1"></div>
-            <div id="2"></div>
-        </div>
+                    
+            
+        <script type="text/javascript">
+            function videoUrl(video){
+                document.getElementById("slider").src = video;
+            }
+        </script>
     </div>
 
     <!-- About -->
