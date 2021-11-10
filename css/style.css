@@ -609,7 +609,7 @@ a {
     width: 1900px;
     display: flex;
     justify-content: center;
-    margin-top: -40px;
+    margin-top: -1415px;
 }
 .balls div{
     transition: all 0.4s;
@@ -1532,7 +1532,6 @@ main.cardsLista section.card.guitarra {
   .theme-switch input {
     display: none;
   }
-
   .slider {
     background: var(--slider-bg-color);
     bottom: 0;
