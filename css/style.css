@@ -1532,6 +1532,7 @@ main.cardsLista section.card.guitarra {
   .theme-switch input {
     display: none;
   }
+
   .slider {
     background: var(--slider-bg-color);
     bottom: 0;
