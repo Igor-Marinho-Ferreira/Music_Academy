@@ -42,7 +42,7 @@
     --pasword-color: #34495e;
     --main-cardsLista-sec-card-btn-color: #fff;
     --balls-div-border-color: #fff;
-    
+
     /* Cores dos Backgrounds */
     --btn-bg: #111;
     --btn-hover-bg: #000;
@@ -119,13 +119,118 @@
     --heading-color: #292922;
 }
 [data-theme='dark'] {
-    --primary-color: rgb(150, 65, 255);
-    --primary-variant: #6c63ff;
-    --secondary-color: #03dac5;
-    --on-primary: #000;
-    --on-background: rgba(255, 255, 255, 0.9);
-    --on-background-alt: rgba(255, 255, 255, 0.7);
-    --background: #121212;
+    /* Cores dos elementos */
+    --a-color:;
+    --btn-class-color:;
+    --navbar-color:;
+    --navbar-items-color:;
+    --navbar-brand-color:;
+    --navbar-brand-hover-color:;
+    --features-color:;
+    --features-aprenda-color:;
+    --footer-color:
+    --footer-menu-item-hover-color:;
+    --footer-content-menu-p-color:;
+    --socials-i-hover-color:;
+    --footer-info-color:;
+    --footer-info-hover-color:;
+    --footer-country-p-hover-color:;
+    --btns-color:;
+    --btns-hover-color:;
+    --fabacess-btn-color:
+    --fa-chevron-circle-up-color:;
+    --main-cards-sec-card-btn-color:;
+    --title-primary-color:;
+    --title-second-color:;
+    --description-primary-color:;
+    --description-second-color:;
+    --btncadastro-color:;
+    --btn-primarycadastro-hover:;
+    --btn-secondcadastro-hover:;
+    --link-social-media-hover-color:;
+    --link-social-media-hover-border-color:;
+    --item-social-media-color:;
+    --item-social-media-border-color:; 
+    --icon-modify-color:;
+    --pasword-color:;
+    --main-cardsLista-sec-card-btn-color:;
+    --balls-div-border-color:;
+
+    /* Cores dos Backgrounds */
+    --btn-bg:;
+    --btn-hover-bg:;
+    --navbar-bg:;
+    --features-bg:;
+    --features-aprenda-bg:;
+    --feature-bg:;
+    --footer-bg:;
+    --balls-div-hover:;
+    --videoAtual-bg:;
+    --fabacess-btn-bg-color:;
+    --fabacess-btn-main-bg-color:;
+    --fabacess-ul-li-label-bg-color:
+    --fabacess-btn-main-focus-bg-color:;
+    --main-cards-sec-card-bg-color:
+    
+    /*Gradiente dos cards */
+    --card-guitarra-primeiroGradient-bg-color:;
+    --card-guitarra-segundoGradient-bg-color:;
+
+    --card-violao-primeiroGradient-bg-color:;
+    --card-violao-segundoGradient-bg-color:;
+
+    --card-teclado-primeiroGradient-bg-color:;
+    --card-teclado-segundoGradient-bg-color:;
+
+    --card-ukulele-primeiroGradient-bg-color:;
+    --card-ukulele-segundoGradient-bg-color:;
+
+    --card-baixo-primeiroGradient-bg-color:;
+    --card-baixo-segundoGradient-bg-color:;
+
+    --card-bateria-primeiroGradient-bg-color:;
+    --card-bateria-segundoGradient-bg-color:;
+
+    --cardLista-guitarra-primeiroGradient-bg-color:;
+    --cardLista-guitarra-segundoGradient-bg-color:;
+
+    /* Box shadows */
+    --card-guitarra-box-shadow-color:;
+    --card-violao-box-shadow-color:;
+    --card-teclado-box-shadow-color:;
+    --card-ukulele-box-shadow-color:;
+    --card-baixo-box-shadow-color:;
+    --card-bateria-box-shadow-color:;
+
+    --cardLista-guitarra-box-shadow-color:;
+
+
+    --containercadrastro-bg-color:; 
+    --content-bg-color:;
+    --content-before-bg-color:;
+    --btn-primarycadastro-bg-color:;
+    --btn-primarycadastro-border-color:;
+    --btn-primarycadastro-hover-bg-color:;
+    --btn-secondCadastro-bg-color:;
+    --btn-secondcadastro-border-color:;
+    --btn-secondcadastro-hover-bg-color:;
+    --btn-secondcadastro-hover-border-color:;
+    --link-social-media-hover-bg-color:;
+    --form-input-bg-color:;
+    --label-input-bg-color:;
+    --cardsLista-sec-card-bg-color:
+    --slider-bg-color:;
+    --slider-before:;
+
+
+
+
+    --primary-color:;
+    --secondary-color:;
+    --font-color:;
+    --bg-color:;
+    --heading-color:;
+    
 }
   
 html {
