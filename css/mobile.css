@@ -29,6 +29,7 @@
     grid-template-columns: 1fr;
 }
 
+
 #features-container .feature:nth-child(2) {
     margin: 15px 0;
 }

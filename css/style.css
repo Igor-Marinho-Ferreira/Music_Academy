@@ -5,8 +5,14 @@
     padding: 0;
     margin: 0;
 }
+body{
+    background-color: var(--color-background);
+}
 :root {
     /* Cores dos elementos */
+    
+    --headline-color:black;
+    --color-goals-items: black;
     --a-color: #000000;
     --btn-class-color: #eee;
     --navbar-color: #eee;
@@ -44,6 +50,8 @@
     --balls-div-border-color: #fff;
 
     /* Cores dos Backgrounds */
+    --color-background-goals:white;
+    --color-background:white;
     --btn-bg: #111;
     --btn-hover-bg: #000;
     --navbar-bg: #fff;
@@ -109,128 +117,129 @@
     --slider-bg-color: #00b3e3;
     --slider-before: #fff;
 
-
-
-
+    /*Dark mode btn*/
     --primary-color: #302AE6;
     --secondary-color: #536390;
     --font-color: #424242;
     --bg-color: #fff;
     --heading-color: #292922;
 }
+
 [data-theme='dark'] {
-    /* Cores dos elementos */
-    --a-color:;
-    --btn-class-color:;
-    --navbar-color:;
-    --navbar-items-color:;
-    --navbar-brand-color:;
-    --navbar-brand-hover-color:;
-    --features-color:;
-    --features-aprenda-color:;
-    --footer-color:
-    --footer-menu-item-hover-color:;
-    --footer-content-menu-p-color:;
-    --socials-i-hover-color:;
-    --footer-info-color:;
-    --footer-info-hover-color:;
-    --footer-country-p-hover-color:;
-    --btns-color:;
-    --btns-hover-color:;
-    --fabacess-btn-color:
-    --fa-chevron-circle-up-color:;
-    --main-cards-sec-card-btn-color:;
-    --title-primary-color:;
-    --title-second-color:;
-    --description-primary-color:;
-    --description-second-color:;
-    --btncadastro-color:;
-    --btn-primarycadastro-hover:;
-    --btn-secondcadastro-hover:;
-    --link-social-media-hover-color:;
-    --link-social-media-hover-border-color:;
-    --item-social-media-color:;
-    --item-social-media-border-color:; 
-    --icon-modify-color:;
-    --pasword-color:;
-    --main-cardsLista-sec-card-btn-color:;
-    --balls-div-border-color:;
+   /* Cores dos elementos */
+   
+   --headline-color:white;
+   --color-goals-items: white;
+   --a-color: #FFF;
+   --btn-class-color: #eee;
+   --navbar-color: #111;
+   --navbar-items-color: #FFF;
+   --navbar-brand-color: #FFF;
+   --navbar-brand-hover-color: #FFF;
+   --features-color: #eee;
+   --features-aprenda-color: #eee;
+   --footer-color: white;
+   --footer-menu-item-hover-color: #fff;
+   --footer-content-menu-p-color: #919496;
+   --socials-i-hover-color: #fff;
+   --footer-info-color: #919496;
+   --footer-info-hover-color: #ffff;
+   --footer-country-p-hover-color: #fff;
+   --btns-color: #fff;
+   --btns-hover-color: #FFF;
+   --fabacess-btn-color: white;
+   --fa-chevron-circle-up-color: #0077b6;
+   --main-cards-sec-card-btn-color: #fff;
+   --title-primary-color: #fff;
+   --title-second-color: #111;
+   --description-primary-color: #fff;
+   --description-second-color: #111;
+   --btncadastro-color: #fff;
+   --btn-primarycadastro-hover: #111;
+   --btn-secondcadastro-hover: #111;
+   --link-social-media-hover-color: #fff;
+   --link-social-media-hover-border-color: #58af9b;
+   --item-social-media-color: #95a5a6;
+   --item-social-media-border-color: #bdc3c7; 
+   --icon-modify-color: #7f8c8d;
+   --pasword-color: #34495e;
+   --main-cardsLista-sec-card-btn-color: #111;
+   --balls-div-border-color: #fff;
 
-    /* Cores dos Backgrounds */
-    --btn-bg:;
-    --btn-hover-bg:;
-    --navbar-bg:;
-    --features-bg:;
-    --features-aprenda-bg:;
-    --feature-bg:;
-    --footer-bg:;
-    --balls-div-hover:;
-    --videoAtual-bg:;
-    --fabacess-btn-bg-color:;
-    --fabacess-btn-main-bg-color:;
-    --fabacess-ul-li-label-bg-color:
-    --fabacess-btn-main-focus-bg-color:;
-    --main-cards-sec-card-bg-color:
-    
-    /*Gradiente dos cards */
-    --card-guitarra-primeiroGradient-bg-color:;
-    --card-guitarra-segundoGradient-bg-color:;
+   /* Cores dos Backgrounds */
+   --color-background-goals:#1c1c1c;
+   --color-background:#1c1c1c;
+   --btn-bg: #111;
+   --btn-hover-bg: #000;
+   --navbar-bg: #111;
+   --features-bg: #222;
+   --features-aprenda-bg: #222222;
+   --feature-bg: #333;
+   --footer-bg: #111;
+   --balls-div-hover: #000;
+   --videoAtual-bg: #fff;
+   --fabacess-btn-bg-color: #fff;
+   --fabacess-btn-main-bg-color: #0077b6;
+   --fabacess-ul-li-label-bg-color: white;
+   --fabacess-btn-main-focus-bg-color: #0077b6;
+   --main-cards-sec-card-bg-color: #111;
+   
+   /*Gradiente dos cards */
+   --card-guitarra-primeiroGradient-bg-color: #9F66FF;
+   --card-guitarra-segundoGradient-bg-color: #DFCBFF;
 
-    --card-violao-primeiroGradient-bg-color:;
-    --card-violao-segundoGradient-bg-color:;
+   --card-violao-primeiroGradient-bg-color: #3E8AFF;
+   --card-violao-segundoGradient-bg-color: #BBDEFF;
 
-    --card-teclado-primeiroGradient-bg-color:;
-    --card-teclado-segundoGradient-bg-color:;
+   --card-teclado-primeiroGradient-bg-color: #FE5F8F;
+   --card-teclado-segundoGradient-bg-color: #FFC7D9;
 
-    --card-ukulele-primeiroGradient-bg-color:;
-    --card-ukulele-segundoGradient-bg-color:;
+   --card-ukulele-primeiroGradient-bg-color: #9F66FF;
+   --card-ukulele-segundoGradient-bg-color: #DFCBFF;
 
-    --card-baixo-primeiroGradient-bg-color:;
-    --card-baixo-segundoGradient-bg-color:;
+   --card-baixo-primeiroGradient-bg-color: #3E8AFF;
+   --card-baixo-segundoGradient-bg-color: #BBDEFF;
 
-    --card-bateria-primeiroGradient-bg-color:;
-    --card-bateria-segundoGradient-bg-color:;
+   --card-bateria-primeiroGradient-bg-color: #FE5F8F;
+   --card-bateria-segundoGradient-bg-color: #FFC7D9;
 
-    --cardLista-guitarra-primeiroGradient-bg-color:;
-    --cardLista-guitarra-segundoGradient-bg-color:;
+   --cardLista-guitarra-primeiroGradient-bg-color: #9F66FF;
+   --cardLista-guitarra-segundoGradient-bg-color: #DFCBFF;
 
-    /* Box shadows */
-    --card-guitarra-box-shadow-color:;
-    --card-violao-box-shadow-color:;
-    --card-teclado-box-shadow-color:;
-    --card-ukulele-box-shadow-color:;
-    --card-baixo-box-shadow-color:;
-    --card-bateria-box-shadow-color:;
+   /* Box shadows */
+   --card-guitarra-box-shadow-color: #DBC4FF;
+   --card-violao-box-shadow-color: #AFD6FF;
+   --card-teclado-box-shadow-color: #FFC1D5;
+   --card-ukulele-box-shadow-color: #fad389;
+   --card-baixo-box-shadow-color: #9cf47c;
+   --card-bateria-box-shadow-color: #f2d3ba;
 
-    --cardLista-guitarra-box-shadow-color:;
-
-
-    --containercadrastro-bg-color:; 
-    --content-bg-color:;
-    --content-before-bg-color:;
-    --btn-primarycadastro-bg-color:;
-    --btn-primarycadastro-border-color:;
-    --btn-primarycadastro-hover-bg-color:;
-    --btn-secondCadastro-bg-color:;
-    --btn-secondcadastro-border-color:;
-    --btn-secondcadastro-hover-bg-color:;
-    --btn-secondcadastro-hover-border-color:;
-    --link-social-media-hover-bg-color:;
-    --form-input-bg-color:;
-    --label-input-bg-color:;
-    --cardsLista-sec-card-bg-color:
-    --slider-bg-color:;
-    --slider-before:;
+   --cardLista-guitarra-box-shadow-color: #DBC4FF;
 
 
+   --containercadrastro-bg-color: #2e2e2e; 
+   --content-bg-color: #fff;
+   --content-before-bg-color: #9c9c9c;
+   --btn-primarycadastro-bg-color: #111;
+   --btn-primarycadastro-border-color: #111;
+   --btn-primarycadastro-hover-bg-color: #fff;
+   --btn-secondCadastro-bg-color: #111;
+   --btn-secondcadastro-border-color: #111;
+   --btn-secondcadastro-hover-bg-color: #fff;
+   --btn-secondcadastro-hover-border-color: #111;
+   --link-social-media-hover-bg-color: #58af9b;
+   --form-input-bg-color: #ecf0f1;
+   --label-input-bg-color: #ecf0f1;
+   --cardsLista-sec-card-bg-color: white;
+   --slider-bg-color: #00b3e3;
+   --slider-before: #fff;
 
-
-    --primary-color:;
-    --secondary-color:;
-    --font-color:;
-    --bg-color:;
-    --heading-color:;
-    
+   /*Dark mode btn*/
+   --primary-color: #302AE6;
+   --secondary-color: #536390;
+   --font-color: #424242;
+   --bg-color: #fff;
+   --heading-color: #292922;
 }
   
 html {
@@ -272,6 +281,7 @@ a {
     text-align: center;
     padding-bottom: 50px;
     letter-spacing: 2px;
+    color: var(--headline-color);
 }
 .headline-sobre {
     font-size: 2.2rem;
@@ -357,7 +367,9 @@ a {
     margin-top: 115px;/*mexer aqui*/
 
 }
-
+#headline-f{
+    color: white;
+}
 #features-aprenda {
     width: 100%;
     background: var(--features-aprenda-bg);
@@ -391,12 +403,14 @@ a {
 #goals {
     width: 100%;
     padding: 50px;
+    background-color: var(--color-background-goals);
 }
 
 #goals-container {
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
 
 #goals-sobre {
@@ -416,9 +430,11 @@ a {
 
 #items {
     width: 650px;
+    
 }
 
 #items .item {
+    color: var(--color-goals-items);
     display: flex;
     padding: 10px;
     margin: 15px 0;
