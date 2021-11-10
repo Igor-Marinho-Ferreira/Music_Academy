@@ -10,6 +10,7 @@ body{
 }
 :root {
     /* Cores dos elementos */
+    --color-background-goalssobre: white;
     --radial50-color: black;
     --cardsLista-letra: black;
     --cardlistamain-bg: white;
@@ -131,6 +132,7 @@ body{
 
 [data-theme='dark'] {
    /* Cores dos elementos */
+   --color-background-goalssobre: #1c1c1c;
    --radial50-color: white;
    --cardsLista-letra: white;
    --cardlistamain-bg: #1c1c1c;
@@ -432,7 +434,7 @@ a {
     padding-top: 15px;
     padding-bottom: 15px;
     margin-left: 25px;
-    
+    background-color: var(--color-background-goalssobre);
 
 }
 #goals-container-sobre {
