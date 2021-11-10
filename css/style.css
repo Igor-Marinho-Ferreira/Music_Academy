@@ -5,6 +5,119 @@
     padding: 0;
     margin: 0;
 }
+:root {
+    /* Cores dos elementos */
+    --a-color: #000000;
+    --btn-class-color: #eee;
+    --navbar-color: #eee;
+    --navbar-items-color: #111;
+    --navbar-brand-color: #FFF;
+    --navbar-brand-hover-color: #FFF;
+    --features-color: #eee;
+    --features-aprenda-color: #eee;
+    --footer-color: white;
+    --footer-menu-item-hover-color: #fff;
+    --footer-content-menu-p-color: #919496;
+    --socials-i-hover-color: #fff;
+    --footer-info-color: #919496;
+    --footer-info-hover-color: #ffff;
+    --footer-country-p-hover-color: #fff;
+    --btns-color: #fff;
+    --btns-hover-color: #000;
+    --fabacess-btn-color: white;
+    --fa-chevron-circle-up-color: #0077b6;
+    --main-cards-sec-card-btn-color: #fff;
+    --title-primary-color: #fff;
+    --title-second-color: #111;
+    --description-primary-color: #fff;
+    --description-second-color: #111;
+    --btncadastro-color: #fff;
+    --btn-primarycadastro-hover: #111;
+    --btn-secondcadastro-hover: #111;
+    --link-social-media-hover-color: #fff;
+    --link-social-media-hover-border-color: #58af9b;
+    --item-social-media-color: #95a5a6;
+    --item-social-media-border-color: #bdc3c7; 
+    --icon-modify-color: #7f8c8d;
+    --pasword-color: #34495e;
+    --main-cardsLista-sec-card-btn-color: #fff;
+    --balls-div-border-color: #fff;
+    
+    /* Cores dos Backgrounds */
+    --btn-bg: #111;
+    --btn-hover-bg: #000;
+    --navbar-bg: #fff;
+    --features-bg: #222;
+    --features-aprenda-bg: #222;
+    --feature-bg: #333;
+    --footer-bg: #111;
+    --balls-div-hover: #000;
+    --videoAtual-bg: #fff;
+    --fabacess-btn-bg-color: #fff;
+    --fabacess-btn-main-bg-color: #0077b6;
+    --fabacess-ul-li-label-bg-color: white;
+    --fabacess-btn-main-focus-bg-color: #0077b6;
+    --main-cards-sec-card-bg-color: white;
+    
+    /*Gradiente dos cards */
+    --card-guitarra-primeiroGradient-bg-color: #9F66FF;
+    --card-guitarra-segundoGradient-bg-color: #DFCBFF;
+
+    --card-violao-primeiroGradient-bg-color: #3E8AFF;
+    --card-violao-segundoGradient-bg-color: #BBDEFF;
+
+    --card-teclado-primeiroGradient-bg-color: #FE5F8F;
+    --card-teclado-segundoGradient-bg-color: #FFC7D9;
+
+    --card-ukulele-primeiroGradient-bg-color: #9F66FF;
+    --card-ukulele-segundoGradient-bg-color: #DFCBFF;
+
+    --card-baixo-primeiroGradient-bg-color: #3E8AFF;
+    --card-baixo-segundoGradient-bg-color: #BBDEFF;
+
+    --card-bateria-primeiroGradient-bg-color: #FE5F8F;
+    --card-bateria-segundoGradient-bg-color: #FFC7D9;
+
+    --cardLista-guitarra-primeiroGradient-bg-color: #9F66FF;
+    --cardLista-guitarra-segundoGradient-bg-color: #DFCBFF;
+
+    /* Box shadows */
+    --card-guitarra-box-shadow-color: #DBC4FF;
+    --card-violao-box-shadow-color: #AFD6FF;
+    --card-teclado-box-shadow-color: #FFC1D5;
+    --card-ukulele-box-shadow-color: #fad389;
+    --card-baixo-box-shadow-color: #9cf47c;
+    --card-bateria-box-shadow-color: #f2d3ba;
+
+    --cardLista-guitarra-box-shadow-color: #DBC4FF;
+
+
+    --containercadrastro-bg-color: #2e2e2e; 
+    --content-bg-color: #fff;
+    --content-before-bg-color: #9c9c9c;
+    --btn-primarycadastro-bg-color: #111;
+    --btn-primarycadastro-border-color: #111;
+    --btn-primarycadastro-hover-bg-color: #fff;
+    --btn-secondCadastro-bg-color: #111;
+    --btn-secondcadastro-border-color: #111;
+    --btn-secondcadastro-hover-bg-color: #fff;
+    --btn-secondcadastro-hover-border-color: #111;
+    --link-social-media-hover-bg-color: #58af9b;
+    --form-input-bg-color: #ecf0f1;
+    --label-input-bg-color: #ecf0f1;
+    --cardsLista-sec-card-bg-color: white;
+    --slider-bg-color: #00b3e3;
+    --slider-before: #fff;
+
+
+
+
+    --primary-color: #302AE6;
+    --secondary-color: #536390;
+    --font-color: #424242;
+    --bg-color: #fff;
+    --heading-color: #292922;
+}
 [data-theme='dark'] {
     --primary-color: rgb(150, 65, 255);
     --primary-variant: #6c63ff;
@@ -27,7 +140,7 @@ body {
 
 a {
     text-decoration: none;
-    color: inherit;
+    color: var(--a-color);
 }
 
 
@@ -36,15 +149,15 @@ a {
     padding: 15px 60px;
     font-size: 1.1rem;
     text-transform: uppercase;
-    background: #111;
-    color: #eee;
+    background: var(--btn-bg);
+    color: var(--btn-class-color);
     border-radius: 5px;
     transition: background 500ms ease;
 }
 
 .btn:hover {
     cursor: pointer;
-    background: #000;
+    background: var(--btn-hover-bg);
 }
 
 .headline {
@@ -89,8 +202,8 @@ a {
 
 #navbar {
     width: 100%;
-    background: #fff ;
-    color: #eee;
+    background: var(--navbar-bg);
+    color: var(--navbar-color);
     height: 80px;
     position: absolute;
 }
@@ -113,7 +226,7 @@ a {
     display: flex;
     list-style: none;
     text-transform: uppercase;
-    color: #111;
+    color: var(--navbar-items-color);
     margin-right: 115px;
 
 }
@@ -123,18 +236,18 @@ a {
 }
 .navbar-brand {
     padding: 0;
-    color: #FFF;
+    color: var(--navbar-brand-color);
 }
   
 .navbar-brand:hover {
-    color: #FFF;
+    color: var(--navbar-brand-hover-color);
 }
 
 /* About */
 #features {
     width: 100%;
-    background: #222;
-    color: #eee;
+    background: var(--features-bg);
+    color: var(--features-color);
     padding: 50px;
     margin-top: 115px;/*mexer aqui*/
 
@@ -142,8 +255,8 @@ a {
 
 #features-aprenda {
     width: 100%;
-    background: #222;
-    color: #eee;
+    background: var(--features-aprenda-bg);
+    color: var(--features-aprenda-color);
     padding: 50px;
     margin-top: 0px;/*mexer aqui*/
 
@@ -159,7 +272,7 @@ a {
 
 .feature {
     flex-direction: column;
-    background: #333;
+    background: var(--feature-bg);
     padding: 20px;
     border-radius: 5px;
 }
@@ -219,8 +332,8 @@ a {
 
 /* Footer */
 #footer {
-	background: #111;
-	color: white;
+	background: var(--footer-bg);
+	color: var(--footer-color);
 	padding: 80px 0;
 }
 
@@ -242,14 +355,14 @@ a {
 }
 
 #footer .footer-content .footer-menu .footer-menu-item:hover {
-	color: #fff;
+	color: var(--footer-menu-item-hover-color);
 	cursor: pointer;
 }
 
 #footer .footer-content .footer-menu p {
 	font-weight: bold;
 	text-transform: uppercase;
-	color: #919496;
+	color: var(--footer-content-menu-p);
 	font-size: 0.8rem;
 }
 
@@ -265,7 +378,7 @@ a {
 }
 
 .socials i:hover {
-	color: #fff;
+	color: var(--socials-i-hover);
 	cursor: pointer;
 }
 
@@ -277,7 +390,7 @@ a {
 	width: 60%;
 	margin: auto;
 	font-weight: bold;
-	color: #919496;
+	color: var(--footer-info);
 	font-size: 0.75rem;
 	padding-top: 50px;
 }
@@ -293,7 +406,7 @@ a {
 }
 
 .footer-info .footer-info-items .footer-info-item:hover {
-	color: #ffff;
+	color: var(--footer-info-hover-color);
 	cursor: pointer;
 }
 
@@ -309,7 +422,7 @@ a {
 }
 
 .footer-info .rights .country p:hover {
-	color: #fff;
+	color: var(--footer-country-p-hover-color);
 	cursor: pointer;
 }
 
@@ -341,7 +454,7 @@ a {
 }
 .btns{
     position: absolute;
-    color: #fff;
+    color: var(--btns-color);
     padding: 10px;
     text-align: center;
     display: flex;
@@ -354,7 +467,7 @@ a {
 }
 .btns:hover{
     transform: scale(1.5);
-    color: #000;
+    color: var(--btns-hover-color);
 }
 #voltar{
     top: 38%;
@@ -373,18 +486,18 @@ a {
 }
 .balls div{
     transition: all 0.4s;
-    border: 3px solid #fff;
+    border: 3px solid var(--balls-div-border-color);
     padding: 5px;
     border-radius: 50%;
     margin-right: 15px;
     cursor: pointer;
 }
 .balls div:hover{
-    background-color: #000;
+    background-color: var(--balls-div-hover);
 }
 .videoAtual{
     transition: all 0.4s;
-    background: #fff;
+    background: var(--videoAtual-bg);
 }
 /* Text Aprenda*/
 
@@ -415,11 +528,11 @@ a {
     cursor: pointer;
     width: 250px;
     height: 300px;
-    background-color: #fff;
+    background-color: var(--fabacess-btn-bg-color);
     border: none;
     box-shadow: 0 1px 5px rgba(0,0,0,.4);
     font-size: 24px;
-    color: white;
+    color: var(--fabacess-btn-color);
       
     -webkit-transition: .2s ease-out;
     -moz-transition: .2s ease-out;
@@ -431,7 +544,7 @@ a {
     width: 65px;
     height: 65px;
     border-radius: 32px;
-    background-color: #0077b6;
+    background-color: var(--fabacess-btn-main-bg-color);
     right: 0;
     bottom: 0;
     z-index: 20;
@@ -471,7 +584,7 @@ a {
     display: block;
     margin-top: 10px;
     padding: 5px 8px;
-    background-color: white;
+    background-color: var(--fabacess-ul-li-label-bg-color);
     box-shadow: 0 1px 3px rgba(0,0,0,.2);
     border-radius:3px;
     height: 20px;
@@ -487,7 +600,7 @@ a {
   .fabACESS button.main:active,
   .fabACESS button.main:focus{
     outline: none;
-    background-color: #0077b6;
+    background-color: var(--fabacess-btn-main-focus-bg-color);
     box-shadow: 0 3px 8px rgba(0,0,0,.5);
    }
    
@@ -509,7 +622,7 @@ a {
 }
 /*Voltar topo*/
 .fa-chevron-circle-up{
-    color: #0077b6;
+    color: var(--fa-chevron-circle-up-color);
 }
 .topoB{
     bottom: 20px;
@@ -538,7 +651,7 @@ main.cards section.card {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    background: white;
+    background: var(--main-cards-sec-card-bg-color);
     padding: 1rem 1.5rem;
     border-radius: 8px;
     max-height: 468px;
@@ -578,50 +691,50 @@ main.cards section.card button {
     cursor: pointer;
     font-size: 80%;
     font-weight: 500;
-    color: #fff;
+    color: var(--main-cards-sec-card-btn-color);
     margin-bottom: 16px 0;
 }
 
 main.cards section.card.guitarra button {
-    background: linear-gradient(to right, #9F66FF, #DFCBFF);
+    background: linear-gradient(to right, var(--card-guitarra-primeiroGradient-bg-color), var(--card-guitarra-segundoGradient-bg-color));
 }
 main.cards section.card.violao button {
-    background: linear-gradient(to right, #3E8AFF, #BBDEFF);
+    background: linear-gradient(to right, var(--card-violao-primeiroGradient-bg-color), var(--card-violao-segundoGradient-bg-color));
 }
 main.cards section.card.teclado button {
-    background: linear-gradient(to right, #FE5F8F, #FFC7D9);
+    background: linear-gradient(to right, var(--card-teclado-primeiroGradient-bg-color), var(--card-teclado-segundoGradient-bg-color));
 }
 
 main.cards section.card.guitarra {
-    box-shadow: 20px 20px 50px -30px #DBC4FF;
+    box-shadow: 20px 20px 50px -30px var(--card-guitarra-box-shadow-color);
 }
 main.cards section.card.violao {
-    box-shadow: 20px 20px 50px -30px #AFD6FF;
+    box-shadow: 20px 20px 50px -30px var(--card-violao-box-shadow-color);
 }
 main.cards section.card.teclado {
-    box-shadow: 20px 20px 50px -30px #FFC1D5;
+    box-shadow: 20px 20px 50px -30px var(--card-teclado-box-shadow-color);
 }
 
 
 
 main.cards section.card.ukulele button {
-    background: linear-gradient(to right, #9F66FF, #DFCBFF);
+    background: linear-gradient(to right, var(--card-ukulele-primeiroGradient-bg-color), var(--card-ukulele-segundoGradient-bg-color));
 }
 main.cards section.card.baixo button {
-    background: linear-gradient(to right, #3E8AFF, #BBDEFF);
+    background: linear-gradient(to right, var(--card-baixo-primeiroGradient-bg-color), var(--card-baixo-segundoGradient-bg-color));
 }
 main.cards section.card.bateria button {
-    background: linear-gradient(to right, #FE5F8F, #FFC7D9);
+    background: linear-gradient(to right, var(--card-bateria-primeiroGradient-bg-color), var(--card-bateria-segundoGradient-bg-color));
 }
 
 main.cards section.card.ukulele {
-    box-shadow: 20px 20px 50px -30px #fad389;
+    box-shadow: 20px 20px 50px -30px var(--card-ukulele-box-shadow-color);
 }
 main.cards section.card.baixo {
-    box-shadow: 20px 20px 50px -30px #9cf47c;
+    box-shadow: 20px 20px 50px -30px var(--card-baixo-box-shadow-color);
 }
 main.cards section.card.bateria {
-    box-shadow: 20px 20px 50px -30px #f2d3ba;
+    box-shadow: 20px 20px 50px -30px var(--card-bateria-box-shadow-color);
 }
 
 
@@ -654,10 +767,10 @@ main.cards section.card.bateria {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #2e2e2e;
+    background-color: var(--containercadrastro-bg-color);
 }
 .content {
-    background-color: #fff;
+    background-color: var(--content-bg-color);
     border-radius: 15px;
     width: 1400px;
     height: 80%;
@@ -668,7 +781,7 @@ main.cards section.card.bateria {
 .content::before {
     content: "";
     position: absolute;
-    background-color: #9c9c9c;
+    background-color: var(--content-before-bg-color);
     width: 40%;
     height: 100%;
     border-top-left-radius: 15px;
@@ -683,10 +796,10 @@ main.cards section.card.bateria {
     text-transform: capitalize;
 }
 .title-primary {
-    color: #fff;
+    color: var(--title-primary-color);
 }
 .title-second {
-    color: #111;
+    color: var(--title-second-color);
 }
 .description {
     font-size: 18px;
@@ -694,15 +807,15 @@ main.cards section.card.bateria {
     line-height: 30px;
 }
 .description-primary {
-    color: #fff;
+    color: var(--description-primary-color);
 }
 .description-second {
-    color: #111;
+    color: var(--description-second-color);
 }
 .btnCADASTRO {
     border-radius: 16px;
     text-transform: uppercase;
-    color: #fff;
+    color: var(--btncadastro-color);
     font-size: 12px;
     padding: 10px 55px;
     cursor: pointer;
@@ -713,23 +826,23 @@ main.cards section.card.bateria {
     margin-top: 1rem;
 }
 .btn-primaryCADASTRO {
-    background-color: #111;
-    border: 1px solid #111;
+    background-color: var(--btn-primarycadastro-bg-color);
+    border: 1px solid var(--btn-primarycadastro-border-color);
     transition: background-color .5s;
 }
 .btn-primaryCADASTRO:hover {
-    background-color: #fff;
-    color: #111;
+    background-color: --btn-primarycadastro-hover-bg-color;
+    color: var(--btn-primarycadastro-hover);
 }
 .btn-secondCADASTRO {
-    background-color: #111;
-    border: 1px solid #111;
+    background-color: var(--btn-secondCadastro-bg-color);
+    border: 1px solid var(--btn-secondcadastro-border-color);
     transition: background-color .5s;
 }
 .btn-secondCADASTRO:hover {
-    background-color: #fff;
-    border: 1px solid #111;
-    color: #111;
+    background-color: var(--btn-secondcadastro-hover-bg-color);
+    border: 1px solid var(--btn-secondcadastro-hover-border-color);
+    color: var(--btn-secondcadastro-hover);
 }
 .first-content {
     display: flex;
@@ -758,22 +871,22 @@ main.cards section.card.bateria {
     transition: background-color .5s;
 }
 .link-social-media:hover .item-social-media{
-    background-color: #58af9b;
-    color: #fff;
-    border-color: #58af9b;
+    background-color: var(--link-social-media-hover-bg-color);
+    color: var(--link-social-media-hover-color);
+    border-color: var(--link-social-media-hover-border-color);
 }
 .list-social-media {
     display: flex;
     list-style-type: none;
 }
 .item-social-media {
-    border: 1px solid #bdc3c7;
+    border: 1px solid var(--item-social-media-border-color);
     border-radius: 50%;
     width: 35px;
     height: 35px;
     line-height: 35px;
     text-align: center;
-    color: #95a5a6;
+    color: var(--item-social-media-color);
 }
 .form {
     display: flex;
@@ -784,17 +897,17 @@ main.cards section.card.bateria {
     height: 45px;
     width: 100%;
     border: none;
-    background-color: #ecf0f1;
+    background-color: var(--form-input-bg-color);
 }
 
 .label-input {
-    background-color: #ecf0f1;
+    background-color: var(--label-input-bg-color);
     display: flex;
     align-items: center;
     margin: 8px;
 }
 .icon-modify {
-    color: #7f8c8d;
+    color: var(--icon-modify-color);
     padding: 0 5px;
 }
 
@@ -813,7 +926,7 @@ main.cards section.card.bateria {
     z-index: -1;
 }
 .password {
-    color: #34495e;
+    color: var(password-color);
     font-size: 14px;
     margin: 15px 0;
     text-align: center;
@@ -1162,7 +1275,7 @@ main.cardsLista section.card {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    background: white;
+    background: var(--cardsLista-sec-card-bg);
     padding: 1rem 1.5rem;
     border-radius: 8px;
     max-height: 468px;
@@ -1211,29 +1324,19 @@ main.cardsLista section.card button {
     cursor: pointer;
     font-size: 80%;
     font-weight: 500;
-    color: #fff;
+    color: var(--main-cardsLista-sec-card-btn-color);
     margin-bottom: 16px 0;
 }
 main.cardsLista section.card.guitarra button {
-    background: linear-gradient(to right, #9F66FF, #DFCBFF);
-}
-main.cardsLista section.card.violao button {
-    background: linear-gradient(to right, #3E8AFF, #BBDEFF);
-}
-main.cardsLista section.card.teclado button {
-    background: linear-gradient(to right, #FE5F8F, #FFC7D9);
+    background: linear-gradient(to right, var(--cardLista-guitarra-primeiroGradient-bg-color), var(--cardLista-guitarra-segundoGradient-bg-color));
 }
 
+
 main.cardsLista section.card.guitarra {
-    box-shadow: 20px 20px 50px -30px #DBC4FF;
+    box-shadow: 20px 20px 50px -30px var(--cardLista-guitarra-box-shadow-color);
     
 }
-main.cardsLista section.card.violao {
-    box-shadow: 20px 20px 50px -30px #AFD6FF;
-}
-main.cardsLista section.card.teclado {
-    box-shadow: 20px 20px 50px -30px #FFC1D5;
-}
+
 
 
 .RadialProgressGuitarra {
@@ -1303,7 +1406,7 @@ main.cardsLista section.card.teclado {
     display: none;
   }
   .slider {
-    background: #00b3e3;
+    background: var(--slider-bg-color);
     bottom: 0;
     cursor: pointer;
     left: 0;
@@ -1314,7 +1417,7 @@ main.cardsLista section.card.teclado {
   }
   
   .slider::before {
-    background: #fff;
+    background: var(--slider-before);
     bottom: 0.5px;
     content: '';
     height: 23px;
