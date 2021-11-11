@@ -1,8 +1,22 @@
-function diminuir(){
-  tamanho--;
-  document.features.style.fontSize=tamanho+"px";
-}
-function aumentar(){
-  tamanho++;
-  document.features.style.fontSize=tamanho+"px";
+function fonte(e) {
+
+	var elemento = $(".acessibilidade");
+	var fonte = parseInt(elemento.css('font-size'));
+
+	var body = $("body");
+	const fonteNormal = parseInt(body.css('font-size'));
+
+
+	if (e == 'a') {
+		fonte++;
+	}
+	if (e == 'd'){
+		fonte--;
+	}
+	if (e == 'n'){
+		fonte = fonteNormal;
+	}
+
+	elemento.css("fontSize", fonte);
+	
 }

@@ -84,7 +84,7 @@
             <div class="feature">
                 <i class="fas fa-book fa-4x"></i>
                 <span class="feature-title" style="margin-left: 8%;">Cursos</span>
-                <!-- <p>A mesma coisa que os concorrentes </p> -->
+                
             </div>
             <div class="feature">
                 <i class="fas fa-tasks fa-4x"></i>
@@ -94,7 +94,7 @@
         </div>
     </section>
     <section id="goals">
-        <div class="headline">Nossos objetivos</div>
+        <div class="headline" >Nossos objetivos</div>
         <div id="goals-container">
             <div id="items">
                 <div class="item">
@@ -131,12 +131,6 @@
 
 		<ul class="fab-options">
 			<li>
-				<span class="fab-label">Sobre Acessibilidade</span>
-				<div class="fab-icon-holder">
-					<i class="fas fa-file-alt"></i>
-				</div>
-			</li>
-			<li>
 				<span class="fab-label">Daltônico</span>
 				<div class="fab-icon-holder">
 					<i class="fas fa-low-vision"></i>
@@ -145,13 +139,19 @@
 			<li>
 				<span class="fab-label">Aumentar Fonte</span>
 				<div class="fab-icon-holder">
-					<i class="fas fa-chevron-circle-up" onclick="aumentar()"></i>
+					<i class="fas fa-chevron-circle-up" onclick="fonte(a)"></i>
+				</div>
+			</li>
+            <li>
+				<span class="fab-label">Fonte Normal</span>
+				<div class="fab-icon-holder">
+					<i class="fas fa-equals"onClick="fonte('n');" title="Normal"></i> 
 				</div>
 			</li>
 			<li>
 				<span class="fab-label">Diminuir Fonte</span>
 				<div class="fab-icon-holder">
-					<i class="fas fa-chevron-circle-down" onclick="diminuir()"></i>
+					<i class="fas fa-chevron-circle-down" onclick="fonte(d)"></i>
 				</div>
 			</li>
 		</ul>
