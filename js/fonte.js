@@ -1,9 +1,9 @@
 function fonte(e) {
 
-	var elemento = $(".acessibilidade");
+	var elemento = $("#items .item");
 	var fonte = parseInt(elemento.css('font-size'));
-
 	var body = $("body");
+	
 	const fonteNormal = parseInt(body.css('font-size'));
 
 
@@ -16,7 +16,5 @@ function fonte(e) {
 	if (e == 'n'){
 		fonte = fonteNormal;
 	}
-
 	elemento.css("fontSize", fonte);
-	
 }
