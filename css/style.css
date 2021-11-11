@@ -257,9 +257,9 @@ html {
     scroll-behavior: smooth;
 }
   
-
 body {
     font-family: 'Roboto', sans-serif;
+
 }
 
 a {
@@ -466,6 +466,7 @@ a {
     margin-left: 1100px;
 }
 
+
 /* Footer */
 #footer {
 	background: var(--footer-bg);
@@ -654,108 +655,94 @@ a {
 }
 
  /* Acess*/
-.fabACESS{
-    position: fixed;
-    bottom:10px;
-    right:10px;
-  }
-  
-  .fabACESS button{
-    cursor: pointer;
-    width: 250px;
-    height: 300px;
-    background-color: var(--fabacess-btn-bg-color);
-    border: none;
-    box-shadow: 0 1px 5px rgba(0,0,0,.4);
-    font-size: 24px;
-    color: var(--fabacess-btn-color);
-      
-    -webkit-transition: .2s ease-out;
-    -moz-transition: .2s ease-out;
-    transition: .2s ease-out;
-  }
-  
-  .fabACESS button.main{
-    position: absolute;
-    width: 65px;
-    height: 65px;
-    border-radius: 32px;
-    background-color: var(--fabacess-btn-main-bg-color);
-    right: 0;
-    bottom: 0;
-    z-index: 20;
-  }
+ h1 {
+	display: flex;
+	align-items: center;
+	justify-content: center;
 
-  
-  .fabACESS ul{
-    position:absolute;
-    bottom: 0;
-    right: 0;
-    padding:0;
-    padding-right:5px;
-    margin:0;
-    list-style:none;
-    z-index:10;
-    
-    -webkit-transition: .2s ease-out;
-    -moz-transition: .2s ease-out;
-    transition: .2s ease-out;
-  }
-  
-  .fabACESS ul li{
-    display: flex;
-    justify-content: flex-start;
-    position: relative;
-    margin-bottom: -10%;
-    opacity: 0;
-    
-    -webkit-transition: .3s ease-out;
-    -moz-transition: .3s ease-out;
-    transition: .3s ease-out;
-  }
-  
-  .fabACESS ul li label{
-    margin-right:10px;
-    white-space: nowrap;
-    display: block;
-    margin-top: 10px;
-    padding: 5px 8px;
-    background-color: var(--fabacess-ul-li-label-bg-color);
-    box-shadow: 0 1px 3px rgba(0,0,0,.2);
-    border-radius:3px;
-    height: 20px;
-    font-size: 18px;
-    pointer-events: none;
-    opacity:0;
-    
-    -webkit-transition: .2s ease-out;
-    -moz-transition: .2s ease-out;
-    transition: .2s ease-out;
-  }
-  
-  .fabACESS button.main:active,
-  .fabACESS button.main:focus{
-    outline: none;
-    background-color: var(--fabacess-btn-main-focus-bg-color);
-    box-shadow: 0 3px 8px rgba(0,0,0,.5);
-   }
-   
-  
-  .fabACESS button.main:active + ul,
-  .fabACESS button.main:focus + ul{
-    bottom: 70px;
-  }
-  
-  .fabACESS button.main:active + ul li,
-  .fabACESS button.main:focus + ul li{
-    margin-bottom: 10px;
-    opacity: 1;
-  }
-  
-  .fabACESS button.main:active + ul li:hover label,
-  .fabACESS button.main:focus + ul li:hover label{
-    opacity: 1;
+	font-size: 3em;
+	color: #444444;
+
+	height: 100vh;
 }
+
+.fab-container {
+	position: fixed;
+	bottom: 20px;
+	z-index: 999;
+    right: 15px;
+	cursor: pointer;
+}
+
+
+.fab-icon-holder {
+	width: 62px;
+	height: 62px;
+	border-radius: 100%;
+	background: #016fb9;
+
+	box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+}
+
+.fab-icon-holder:hover{
+	opacity: 0.8;
+}
+
+
+.fab-icon-holder i {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	height: 100%;
+	font-size: 40px;
+	color: #ffffff;
+}
+
+
+
+.fab-options {
+	list-style-type: none;
+	margin: 0;
+
+	position: absolute;
+	bottom: 70px;
+	right: -5px;
+    font-size: 40px;
+
+
+	opacity: 0;
+
+	transition: all 0.3s ease;
+	transform: scale(0);
+	transform-origin: 85% bottom;
+}
+
+.fab:hover + .fab-options, .fab-options:hover {
+	opacity: 1;
+	transform: scale(1);
+}
+
+.fab-options li {
+	display: flex;
+	justify-content: flex-end;
+	padding: 5px;
+}
+
+.fab-label {
+	padding: 2px 5px;
+	align-self: center;
+	user-select: none;
+	white-space: nowrap;
+	border-radius: 3px;
+	font-size: 16px;
+	background: #666666;
+	color: #ffffff;
+	box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+	margin-right: 10px;
+}
+
+
 /*Voltar topo*/
 .fa-chevron-circle-up{
     color: var(--fa-chevron-circle-up-color);
