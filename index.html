@@ -1,226 +1,1577 @@
-<!DOCTYPE html>
-<html lang="en">
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" media="screen and (max-width: 1040px)" href="css/mobile.css">
-    <link rel="shortcut icon" type="imagex/png" href="./img/logositeico.ico">
-    <title>Music Academy</title>
-</head>
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: var(--color-background);
+}
+:root {
+    /* Cores dos elementos */
+    --color-background-goalssobre: white;
+    --radial50-color: black;
+    --cardsLista-letra: black;
+    --cardlistamain-bg: white;
+    --letrasaprenda-color: black;
+    --backgroundcoloraprenda-color: #fff;
+    --headline-color:black;
+    --color-goals-items: black;
+    --a-color: #000000;
+    --btn-class-color: #eee;
+    --navbar-color: #eee;
+    --navbar-items-color: #111;
+    --navbar-brand-color: #FFF;
+    --navbar-brand-hover-color: #FFF;
+    --features-color: #eee;
+    --features-aprenda-color: #eee;
+    --footer-color: white;
+    --footer-menu-item-hover-color: #fff;
+    --footer-content-menu-p-color: #919496;
+    --socials-i-hover-color: #fff;
+    --footer-info-color: #919496;
+    --footer-info-hover-color: #ffff;
+    --footer-country-p-hover-color: #fff;
+    --btns-color: #fff;
+    --btns-hover-color: #000;
+    --fabacess-btn-color: white;
+    --fa-chevron-circle-up-color: #0077b6;
+    --main-cards-sec-card-btn-color: #fff;
+    --title-primary-color: #fff;
+    --title-second-color: #111;
+    --description-primary-color: #fff;
+    --description-second-color: #111;
+    --btncadastro-color: #fff;
+    --btn-primarycadastro-hover: #111;
+    --btn-secondcadastro-hover: #111;
+    --link-social-media-hover-color: #fff;
+    --link-social-media-hover-border-color: #58af9b;
+    --item-social-media-color: #95a5a6;
+    --item-social-media-border-color: #bdc3c7; 
+    --icon-modify-color: #7f8c8d;
+    --pasword-color: #34495e;
+    --main-cardsLista-sec-card-btn-color: #fff;
+    --balls-div-border-color: #fff;
 
-<body>
-    <nav id="navbar">
-        <div id="navbar-container">
-            <a class="navbar-brand" href="index.html">
-            <img src="./img/logov2black.png" alt="" class="logo" />
-            <ul id="navbar-items">
-                <li><a href="lista.html">Lista</a></li>
-                <li><a href="aprenda.html">Aprenda</a></li>
-                <li><a href="sobre.html">Sobre</a></li>
-                <li><a>|</a></li>
-                <li><a href="cadastro.html">Entrar</a></li>
-                <li><a href="cadastro.html">Cadastro</a></li>
-                    <!-- Dark Mode Switcher -->
-                <div class="theme-switch-wrapper">
-                    <!-- Text and icon -->
-                    <span id="toggle-icon">
-                    <i class="fas fa-sun"></i>
-                    </span>
-                    <!-- Switcher -->
-                    <label class="theme-switch">
-                    <input type="checkbox" />
-                    <div class="slider round"></div>
-                    </label>
-                </div>
-            </ul>
-        </div>
-    </nav>
+    /* Cores dos Backgrounds */
+    --color-background-goals:white;
+    --color-background:white;
+    --btn-bg: #111;
+    --btn-hover-bg: #000;
+    --navbar-bg: #fff;
+    --features-bg: #222;
+    --features-aprenda-bg: #222;
+    --feature-bg: #333;
+    --footer-bg: #111;
+    --balls-div-hover: #000;
+    --videoAtual-bg: #fff;
+    --fabacess-btn-bg-color: #fff;
+    --fabacess-btn-main-bg-color: #0077b6;
+    --fabacess-ul-li-label-bg-color: white;
+    --fabacess-btn-main-focus-bg-color: #0077b6;
+    --main-cards-sec-card-bg-color: white;
+    
+    /*Gradiente dos cards */
+    --card-guitarra-primeiroGradient-bg-color: #9F66FF;
+    --card-guitarra-segundoGradient-bg-color: #DFCBFF;
 
-    <div id= "topo" class="slide">
-        <div class="slides">
-            <ul>
-                <div id="atual" class="videos">
-                    <video autoplay="autoplay" loop="loop" muted="muted" id="slider" >
-                        <source src="./movies/BackgroundONE.mp4" type="video/mp4" alt=""> 
-                    </video>
-                </div>
-                <div class="videos">
-                    <video autoplay="autoplay" loop="loop" muted="muted">
-                        <source src="./movies/Background2.mp4" type="video/mp4" alt=""> 
-                    </video>
-                </div>
-                <div class="videos">
-                    <video autoplay="autoplay" muted="muted">
-                        <source src="./movies/BackgroundONE.mp4" type="video/mp4" alt=""> 
-                    </video>
-                </div>
-                <div id = "voltar" class="btns">
-                    <i class="fas fa-chevron-left"></i>
-                </div>
-                <div id = "next" class="btns">
-                    <i class="fas fa-chevron-right" onclick="videoUrl('./movies/Background2.mp4')"></i>
-                </div>  
-                <div class="balls">
-                    <div class=videoAtual id="0"></div>
-                    <div id="1"></div>
-                    <div id="2"></div>
-                </div>
-            </ul>  
+    --card-violao-primeiroGradient-bg-color: #3E8AFF;
+    --card-violao-segundoGradient-bg-color: #BBDEFF;
+
+    --card-teclado-primeiroGradient-bg-color: #FE5F8F;
+    --card-teclado-segundoGradient-bg-color: #FFC7D9;
+
+    --card-ukulele-primeiroGradient-bg-color: #9F66FF;
+    --card-ukulele-segundoGradient-bg-color: #DFCBFF;
+
+    --card-baixo-primeiroGradient-bg-color: #3E8AFF;
+    --card-baixo-segundoGradient-bg-color: #BBDEFF;
+
+    --card-bateria-primeiroGradient-bg-color: #FE5F8F;
+    --card-bateria-segundoGradient-bg-color: #FFC7D9;
+
+    --cardLista-guitarra-primeiroGradient-bg-color: #9F66FF;
+    --cardLista-guitarra-segundoGradient-bg-color: #DFCBFF;
+
+    /* Box shadows */
+    --card-guitarra-box-shadow-color: #DBC4FF;
+    --card-violao-box-shadow-color: #AFD6FF;
+    --card-teclado-box-shadow-color: #FFC1D5;
+    --card-ukulele-box-shadow-color: #fad389;
+    --card-baixo-box-shadow-color: #9cf47c;
+    --card-bateria-box-shadow-color: #f2d3ba;
+
+    --cardLista-guitarra-box-shadow-color: #DBC4FF;
 
 
-        </div>
-                    
+    --containercadrastro-bg-color: #2e2e2e; 
+    --content-bg-color: #fff;
+    --content-before-bg-color: #9c9c9c;
+    --btn-primarycadastro-bg-color: #111;
+    --btn-primarycadastro-border-color: #111;
+    --btn-primarycadastro-hover-bg-color: #fff;
+    --btn-secondCadastro-bg-color: #111;
+    --btn-secondcadastro-border-color: #111;
+    --btn-secondcadastro-hover-bg-color: #fff;
+    --btn-secondcadastro-hover-border-color: #111;
+    --link-social-media-hover-bg-color: #58af9b;
+    --form-input-bg-color: #ecf0f1;
+    --label-input-bg-color: #ecf0f1;
+    --cardsLista-sec-card-bg-color: white;
+    --slider-bg-color: #00b3e3;
+    --slider-before: #fff;
+
+    /*Dark mode btn*/
+    --primary-color: #302AE6;
+    --secondary-color: #536390;
+    --font-color: #424242;
+    --bg-color: #fff;
+    --heading-color: #292922;
+}
+
+[data-theme='dark'] {
+   /* Cores dos elementos */
+   --color-background-goalssobre: #1c1c1c;
+   --radial50-color: white;
+   --cardsLista-letra: white;
+   --cardlistamain-bg: #1c1c1c;
+   --letrasaprenda-color: #fff;
+   --headline-color:white;
+   --color-goals-items: white;
+   --a-color: #FFF;
+   --btn-class-color: #eee;
+   --navbar-color: #111;
+   --navbar-items-color: #FFF;
+   --navbar-brand-color: #FFF;
+   --navbar-brand-hover-color: #FFF;
+   --features-color: #eee;
+   --features-aprenda-color: #eee;
+   --footer-color: white;
+   --footer-menu-item-hover-color: #fff;
+   --footer-content-menu-p-color: #919496;
+   --socials-i-hover-color: #fff;
+   --footer-info-color: #919496;
+   --footer-info-hover-color: #ffff;
+   --footer-country-p-hover-color: #fff;
+   --btns-color: #fff;
+   --btns-hover-color: #FFF;
+   --fabacess-btn-color: white;
+   --fa-chevron-circle-up-color: #0077b6;
+   --main-cards-sec-card-btn-color: #fff;
+   --title-primary-color: #fff;
+   --title-second-color: #111;
+   --description-primary-color: #fff;
+   --description-second-color: #111;
+   --btncadastro-color: #fff;
+   --btn-primarycadastro-hover: #111;
+   --btn-secondcadastro-hover: #111;
+   --link-social-media-hover-color: #fff;
+   --link-social-media-hover-border-color: #58af9b;
+   --item-social-media-color: #95a5a6;
+   --item-social-media-border-color: #bdc3c7; 
+   --icon-modify-color: #7f8c8d;
+   --pasword-color: #34495e;
+   --main-cardsLista-sec-card-btn-color: #111;
+   --balls-div-border-color: #fff;
+
+   /* Cores dos Backgrounds */
+   --backgroundcoloraprenda-color: #1c1c1c;
+   --color-background-goals:#1c1c1c;
+   --color-background:#1c1c1c;
+   --btn-bg: #111;
+   --btn-hover-bg: #000;
+   --navbar-bg: #111;
+   --features-bg: #222;
+   --features-aprenda-bg: #222222;
+   --feature-bg: #333;
+   --footer-bg: #111;
+   --balls-div-hover: #000;
+   --videoAtual-bg: #fff;
+   --fabacess-btn-bg-color: #fff;
+   --fabacess-btn-main-bg-color: #0077b6;
+   --fabacess-ul-li-label-bg-color: white;
+   --fabacess-btn-main-focus-bg-color: #0077b6;
+   --main-cards-sec-card-bg-color: #111;
+   
+   /*Gradiente dos cards */
+   --card-guitarra-primeiroGradient-bg-color: #9F66FF;
+   --card-guitarra-segundoGradient-bg-color: #DFCBFF;
+
+   --card-violao-primeiroGradient-bg-color: #3E8AFF;
+   --card-violao-segundoGradient-bg-color: #BBDEFF;
+
+   --card-teclado-primeiroGradient-bg-color: #FE5F8F;
+   --card-teclado-segundoGradient-bg-color: #FFC7D9;
+
+   --card-ukulele-primeiroGradient-bg-color: #9F66FF;
+   --card-ukulele-segundoGradient-bg-color: #DFCBFF;
+
+   --card-baixo-primeiroGradient-bg-color: #3E8AFF;
+   --card-baixo-segundoGradient-bg-color: #BBDEFF;
+
+   --card-bateria-primeiroGradient-bg-color: #FE5F8F;
+   --card-bateria-segundoGradient-bg-color: #FFC7D9;
+
+   --cardLista-guitarra-primeiroGradient-bg-color: #9F66FF;
+   --cardLista-guitarra-segundoGradient-bg-color: #DFCBFF;
+
+   /* Box shadows */
+   --card-guitarra-box-shadow-color: #DBC4FF;
+   --card-violao-box-shadow-color: #AFD6FF;
+   --card-teclado-box-shadow-color: #FFC1D5;
+   --card-ukulele-box-shadow-color: #fad389;
+   --card-baixo-box-shadow-color: #9cf47c;
+   --card-bateria-box-shadow-color: #f2d3ba;
+
+   --cardLista-guitarra-box-shadow-color: #DBC4FF;
+
+
+   --containercadrastro-bg-color: #2e2e2e; 
+   --content-bg-color: #fff;
+   --content-before-bg-color: #9c9c9c;
+   --btn-primarycadastro-bg-color: #111;
+   --btn-primarycadastro-border-color: #111;
+   --btn-primarycadastro-hover-bg-color: #fff;
+   --btn-secondCadastro-bg-color: #111;
+   --btn-secondcadastro-border-color: #111;
+   --btn-secondcadastro-hover-bg-color: #fff;
+   --btn-secondcadastro-hover-border-color: #111;
+   --link-social-media-hover-bg-color: #58af9b;
+   --form-input-bg-color: #ecf0f1;
+   --label-input-bg-color: #ecf0f1;
+   --cardsLista-sec-card-bg-color: white;
+   --slider-bg-color: #00b3e3;
+   --slider-before: #fff;
+
+   /*Dark mode btn*/
+   --primary-color: #302AE6;
+   --secondary-color: #536390;
+   --font-color: #424242;
+   --bg-color: #fff;
+   --heading-color: #292922;
+}
+  
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+  
+body {
+    font-family: 'Roboto', sans-serif;
+
+}
+
+a {
+    text-decoration: none;
+    color: var(--a-color);
+}
+
+
+.btn {
+    display: inline-block;
+    padding: 15px 60px;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    background: var(--btn-bg);
+    color: var(--btn-class-color);
+    border-radius: 5px;
+    transition: background 500ms ease;
+}
+
+.btn:hover {
+    cursor: pointer;
+    background: var(--btn-hover-bg);
+}
+
+.headline {
+    font-size: 2.2rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 50px;
+    letter-spacing: 2px;
+    color: var(--headline-color);
+}
+.headline-sobre {
+    font-size: 2.2rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 25px;
+    letter-spacing: 2px;
+    margin-top: 5%;
+    padding-top: 25px;
+}
+.headline-aprenda {
+    font-size: 2.2rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 25px;
+    letter-spacing: 2px;
+    margin-top: 5%;
+    padding-top: 25px;
+}
+.headline-lista {
+    font-size: 2.2rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 25px;
+    letter-spacing: 2px;
+    margin-top: 5%;
+    padding-top: 25px;
+}
+/* Navbar */
+
+#navbar {
+    width: 100%;
+    background: var(--navbar-bg);
+    color: var(--navbar-color);
+    height: 80px;
+    position: absolute;
+}
+
+#navbar-container {
+    width: 80%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+	height: 50px;
+	width: auto;
+}
+
+#navbar-items {
+    display: flex;
+    list-style: none;
+    text-transform: uppercase;
+    color: var(--navbar-items-color);
+    margin-right: 115px;
+
+}
+
+#navbar-items li {
+    padding: 10px;
+}
+.navbar-brand {
+    padding: 0;
+    color: var(--navbar-brand-color);
+}
+  
+.navbar-brand:hover {
+    color: var(--navbar-brand-hover-color);
+}
+
+/* About */
+#features {
+    width: 100%;
+    background: var(--features-bg);
+    color: var(--features-color);
+    padding: 50px;
+    margin-top: 115px;/*mexer aqui*/
+
+}
+.headline-f{
+    font-size: 2.2rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 50px;
+    letter-spacing: 2px;
+    color: white;
+}
+#features-aprenda {
+    width: 100%;
+    background: var(--features-aprenda-bg);
+    color: var(--features-aprenda-color);
+    padding: 50px;
+    margin-top: 0px;/*mexer aqui*/
+
+}
+
+#features-container {
+    
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 50px;
+}
+
+.feature {
+    flex-direction: column;
+    background: var(--feature-bg);
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.feature-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* Goals */
+#goals {
+    width: 100%;
+    padding: 50px;
+    background-color: var(--color-background-goals);
+}
+
+#goals-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#goals-sobre {
+    width: 100%;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-left: 25px;
+    background-color: var(--color-background-goalssobre);
+
+}
+#goals-container-sobre {
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    
+}
+
+#items {
+    width: 650px;
+    
+}
+
+#items .item {
+    color: var(--color-goals-items);
+    display: flex;
+    padding: 10px;
+    margin: 15px 0;
+    font-size: 1.2rem;
+}
+
+#items-sobre {
+    width: 650px;
+}
+
+#items-sobre .item-sobre {
+    top: 308px;
+    position: absolute;
+    margin-left: 1100px;
+}
+
+/* Footer */
+#footer {
+	background: var(--footer-bg);
+	color: var(--footer-color);
+	padding: 80px 0;
+}
+
+#footer .footer-content {
+	display: flex;
+	width: 60%;
+	margin: auto;
+	justify-content: space-between;
+}
+
+#footer .footer-content .footer-menu {
+	margin: 0 60px;
+	list-style: none;
+}
+
+#footer .footer-content .footer-menu .footer-menu-item {
+	margin: 25px 0;
+	transition: all 300ms ease;
+}
+
+#footer .footer-content .footer-menu .footer-menu-item:hover {
+	color: var(--footer-menu-item-hover-color);
+	cursor: pointer;
+}
+
+#footer .footer-content .footer-menu p {
+	font-weight: bold;
+	text-transform: uppercase;
+	color: var(--footer-content-menu-p);
+	font-size: 0.8rem;
+}
+
+/* Footer Socials */
+.socials {
+	display: flex;
+}
+
+.socials i {
+	margin: 0 20px;
+	font-size: 1.7rem;
+	transition: all 300ms ease;
+}
+
+.socials i:hover {
+	color: var(--socials-i-hover);
+	cursor: pointer;
+}
+
+/* Footer Info */
+.footer-info {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+	width: 60%;
+	margin: auto;
+	font-weight: bold;
+	color: var(--footer-info);
+	font-size: 0.75rem;
+	padding-top: 50px;
+}
+
+.footer-info .footer-info-items {
+	display: flex;
+	list-style: none;
+}
+
+.footer-info .footer-info-items .footer-info-item {
+	margin: 0 10px;
+	transition: all 300ms ease;
+}
+
+.footer-info .footer-info-items .footer-info-item:hover {
+	color: var(--footer-info-hover-color);
+	cursor: pointer;
+}
+
+.footer-info .rights .country {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	margin-bottom: 10px;
+}
+
+.footer-info .rights .country p {
+	transition: all 300ms ease;
+}
+
+.footer-info .rights .country p:hover {
+	color: var(--footer-country-p-hover-color);
+	cursor: pointer;
+}
+
+.footer-info .rights .country .brazil-flag {
+	height: 20px;
+	width: auto;
+	display: inline-block;
+	margin-left: 10px;
+}
+
+/*Slider*/
+.slide{
+    width: 1890px;
+    height: 680px;
+    overflow: hidden;
+    transition: all 0.4s;
+}
+.slides{
+    width: 5120px;
+    display: flex;
+}
+.videos video{
+    width: 1890px;
+    height: 680px;
+    
+}
+#atual{
+    transition: all 4s;
+}
+.btns{
+    position: absolute;
+    color: var(--btns-color);
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.4s;
+    font-size: 1.7em;
+    margin-top: -5px;
+}
+.btns:hover{
+    transform: scale(1.5);
+    color: var(--btns-hover-color);
+}
+#voltar{
+    top: 38%;
+    left: 9%;
+}
+#next{
+    top: 38%;
+    right: 10%;
+}
+.balls{
+    position: absolute;
+    width: 1900px;
+    display: flex;
+    justify-content: center;
+    margin-top: -1415px;
+}
+.balls div{
+    transition: all 0.4s;
+    border: 3px solid var(--balls-div-border-color);
+    padding: 5px;
+    border-radius: 50%;
+    margin-right: 15px;
+    cursor: pointer;
+}
+.balls div:hover{
+    background-color: var(--balls-div-hover);
+}
+.videoAtual{
+    transition: all 0.4s;
+    background: var(--videoAtual-bg);
+}
+/* Text Aprenda*/
+
+
+.textaprenda-container {
+    position: absolute;
+    z-index: 1;
+    text-align: left;
+    margin-left: 125px;
+}
+
+.textaprenda-container h2 {
+    font-family: arial, sans-serif;
+    margin-top: 25%;
+    margin-bottom: 30%;
+    text-transform: uppercase;
+	font-size: 3rem;
+}
+
+ /* Acess*/
+ h1 {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	font-size: 3em;
+	color: #444444;
+
+	height: 100vh;
+}
+
+.fab-container {
+	position: fixed;
+	bottom: 20px;
+	z-index: 999;
+    right: 15px;
+	cursor: pointer;
+}
+
+
+.fab-icon-holder {
+	width: 62px;
+	height: 62px;
+	border-radius: 100%;
+	background: #016fb9;
+
+	box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+}
+
+.fab-icon-holder:hover{
+	opacity: 0.8;
+}
+
+
+.fab-icon-holder i {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	height: 100%;
+	font-size: 40px;
+	color: #ffffff;
+}
+
+
+
+.fab-options {
+	list-style-type: none;
+	margin: 0;
+
+	position: absolute;
+	bottom: 70px;
+	right: -5px;
+    font-size: 40px;
+
+
+	opacity: 0;
+
+	transition: all 0.3s ease;
+	transform: scale(0);
+	transform-origin: 85% bottom;
+}
+
+.fab:hover + .fab-options, .fab-options:hover {
+	opacity: 1;
+	transform: scale(1);
+}
+
+.fab-options li {
+	display: flex;
+	justify-content: flex-end;
+	padding: 5px;
+}
+
+.fab-label {
+	padding: 2px 5px;
+	align-self: center;
+	user-select: none;
+	white-space: nowrap;
+	border-radius: 3px;
+	font-size: 16px;
+	background: #666666;
+	color: #ffffff;
+	box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+	margin-right: 10px;
+}
+
+
+/*Voltar topo*/
+.fa-chevron-circle-up{
+    color: var(--fa-chevron-circle-up-color);
+}
+.topoB{
+    bottom: 20px;
+    position: fixed;
+    right: -500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .4s all;
+}
+
+.show-button .topoB{
+    right: 85px;
+    transition: .4s all;
+}
+
+/*Cards*/
+
+  main.cards {
+    display: flex;
+    padding: 80px;
+    background-color: var(--backgroundcoloraprenda-color);
+}
+
+main.cards section.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background: var(--main-cards-sec-card-bg-color);
+    padding: 1rem 1.5rem;
+    border-radius: 8px;
+    max-height: 468px;
+    margin-left: 32px;
+}
+
+main.cards section.card:first-child {
+    margin-left: 0;
+}
+
+main.cards section.card .icon {
+    width: 64px;
+    height: 64px;
+}
+
+main.cards section.card img {
+    width: 100%;
+}
+
+main.cards section.card h3 {
+    font-size: 100%;
+    margin: 16px 0;
+    color: var(--letrasaprenda-color);
+}
+
+main.cards section.card span {
+    font-weight: 300;
+    max-width: 240px;
+    font-size: 80%;
+    margin-bottom: 16px;
+    color: var(--letrasaprenda-color);
+}
+
+main.cards section.card button {
+    padding: 0.5rem 1rem;
+    text-transform: uppercase;
+    border-radius: 32px;
+    border: 0;
+    cursor: pointer;
+    font-size: 80%;
+    font-weight: 500;
+    color: var(--main-cards-sec-card-btn-color);
+    margin-bottom: 16px 0;
+}
+
+main.cards section.card.guitarra button {
+    background: linear-gradient(to right, var(--card-guitarra-primeiroGradient-bg-color), var(--card-guitarra-segundoGradient-bg-color));
+}
+main.cards section.card.violao button {
+    background: linear-gradient(to right, var(--card-violao-primeiroGradient-bg-color), var(--card-violao-segundoGradient-bg-color));
+}
+main.cards section.card.teclado button {
+    background: linear-gradient(to right, var(--card-teclado-primeiroGradient-bg-color), var(--card-teclado-segundoGradient-bg-color));
+}
+
+main.cards section.card.guitarra {
+    box-shadow: 20px 20px 50px -30px var(--card-guitarra-box-shadow-color);
+}
+main.cards section.card.violao {
+    box-shadow: 20px 20px 50px -30px var(--card-violao-box-shadow-color);
+}
+main.cards section.card.teclado {
+    box-shadow: 20px 20px 50px -30px var(--card-teclado-box-shadow-color);
+}
+
+
+
+main.cards section.card.ukulele button {
+    background: linear-gradient(to right, var(--card-ukulele-primeiroGradient-bg-color), var(--card-ukulele-segundoGradient-bg-color));
+}
+main.cards section.card.baixo button {
+    background: linear-gradient(to right, var(--card-baixo-primeiroGradient-bg-color), var(--card-baixo-segundoGradient-bg-color));
+}
+main.cards section.card.bateria button {
+    background: linear-gradient(to right, var(--card-bateria-primeiroGradient-bg-color), var(--card-bateria-segundoGradient-bg-color));
+}
+
+main.cards section.card.ukulele {
+    box-shadow: 20px 20px 50px -30px var(--card-ukulele-box-shadow-color);
+}
+main.cards section.card.baixo {
+    box-shadow: 20px 20px 50px -30px var(--card-baixo-box-shadow-color);
+}
+main.cards section.card.bateria {
+    box-shadow: 20px 20px 50px -30px var(--card-bateria-box-shadow-color);
+}
+
+
+@media screen and (max-width: 720px) {
+    main.cards {
+        flex-direction: column;
+    }
+
+    main.cards section.card {
+        margin-left: 0;
+        margin-bottom: 32px;
+    }
+
+    main.cards section.card:last-child {
+        margin-bottom: 0;
+    }
+
+    main.cards section.card button {
+        font-size: 70%;
+    }
+
+}
+
+/* cadastro */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+.containercadrastro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: var(--containercadrastro-bg-color);
+}
+.content {
+    background-color: var(--content-bg-color);
+    border-radius: 15px;
+    width: 1400px;
+    height: 80%;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+.content::before {
+    content: "";
+    position: absolute;
+    background-color: var(--content-before-bg-color);
+    width: 40%;
+    height: 100%;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+
+
+    left: 0;
+}
+.title {
+    font-size: 33px;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+.title-primary {
+    color: var(--title-primary-color);
+}
+.title-second {
+    color: var(--title-second-color);
+}
+.description {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 30px;
+}
+.description-primary {
+    color: var(--description-primary-color);
+}
+.description-second {
+    color: var(--description-second-color);
+}
+.btnCADASTRO {
+    border-radius: 16px;
+    text-transform: uppercase;
+    color: var(--btncadastro-color);
+    font-size: 12px;
+    padding: 10px 55px;
+    cursor: pointer;
+    font-weight: bold;
+    width: 170px;
+    align-self: center;
+    border: none;
+    margin-top: 1rem;
+}
+.btn-primaryCADASTRO {
+    background-color: var(--btn-primarycadastro-bg-color);
+    border: 1px solid var(--btn-primarycadastro-border-color);
+    transition: background-color .5s;
+}
+.btn-primaryCADASTRO:hover {
+    background-color: --btn-primarycadastro-hover-bg-color;
+    color: var(--btn-primarycadastro-hover);
+}
+.btn-secondCADASTRO {
+    background-color: var(--btn-secondCadastro-bg-color);
+    border: 1px solid var(--btn-secondcadastro-border-color);
+    transition: background-color .5s;
+}
+.btn-secondCADASTRO:hover {
+    background-color: var(--btn-secondcadastro-hover-bg-color);
+    border: 1px solid var(--btn-secondcadastro-hover-border-color);
+    color: var(--btn-secondcadastro-hover);
+}
+.first-content {
+    display: flex;
+}
+.first-content .second-column {
+    z-index: 11;
+}
+.first-column {
+    text-align: center;
+    width: 40%;
+    z-index: 10;
+}
+.second-column {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.social-media {
+    margin: 1rem 0;
+}
+.link-social-media:not(:first-child){
+    margin-left: 10px;
+}
+.link-social-media .item-social-media {
+    transition: background-color .5s;
+}
+.link-social-media:hover .item-social-media{
+    background-color: var(--link-social-media-hover-bg-color);
+    color: var(--link-social-media-hover-color);
+    border-color: var(--link-social-media-hover-border-color);
+}
+.list-social-media {
+    display: flex;
+    list-style-type: none;
+}
+.item-social-media {
+    border: 1px solid var(--item-social-media-border-color);
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    color: var(--item-social-media-color);
+}
+.form {
+    display: flex;
+    flex-direction: column;
+    width: 55%;
+}
+.form input {
+    height: 45px;
+    width: 100%;
+    border: none;
+    background-color: var(--form-input-bg-color);
+}
+
+.label-input {
+    background-color: var(--label-input-bg-color);
+    display: flex;
+    align-items: center;
+    margin: 8px;
+}
+.icon-modify {
+    color: var(--icon-modify-color);
+    padding: 0 5px;
+}
+
+/* second content*/
+
+.second-content {
+    position: absolute;
+    display: flex;
+}
+.second-content .first-column {
+    order: 2;
+    z-index: -1;
+}
+.second-content .second-column {
+    order: 1;
+    z-index: -1;
+}
+.password {
+    color: var(password-color);
+    font-size: 14px;
+    margin: 15px 0;
+    text-align: center;
+}
+.password::first-letter {
+    text-transform: capitalize;
+}
+
+
+
+.sign-in-js .first-content .first-column {
+    z-index: -1;
+}
+
+.sign-in-js .second-content .second-column {
+    z-index: 11;
+}
+.sign-in-js .second-content .first-column {
+    z-index: 13;
+}
+
+.sign-in-js .content::before {
+    left: 60%;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    animation: slidein 1.3s; /*MODIFIQUEI DE 3s PARA 1.3s*/
+
+    z-index: 12;
+}
+
+.sign-up-js .content::before {
+    animation: slideout 1.3s; /*MODIFIQUEI DE 3s PARA 1.3s*/
+
+    z-index: 12;
+}
+
+.sign-up-js .second-content .first-column,
+.sign-up-js .second-content .second-column {
+    z-index: -1;
+}
+
+.sign-up-js .first-content .second-column {
+    z-index: 11;
+}
+
+.sign-up-js .first-content .first-column {
+    z-index: 13;    
+}
+
+
+/* DESLOCAMENTO CONTEÚDO ATRÁS DO CONTENT:BEFORE*/
+.sign-in-js .first-content .second-column {
+
+    z-index: -1;
+    position: relative;
+    animation: deslocamentoEsq 1.3s; /*MODIFIQUEI DE 3s PARA 1.3s*/
+}
+
+.sign-up-js .second-content .second-column {
+    position: relative;
+    z-index: -1;
+    animation: deslocamentoDir 1.3s; /*MODIFIQUEI DE 3s PARA 1.3s*/
+}
+
+/*ANIMAÇÃOO CSS PARA O CONTEÚDO*/
+
+@keyframes deslocamentoEsq {
+
+    from {
+        left: 0;
+        opacity: 1;
+        z-index: 12;
+    }
+
+    25% {
+        left: -80px;
+        opacity: .5;
+        /* z-index: 12; NÃO HÁ NECESSIDADE */
+    }
+
+    50% {
+        left: -100px;
+        opacity: .2;
+        /* z-index: 12; NÃO HÁ NECESSIDADE */
+    }
+
+    to {
+        left: -110px;
+        opacity: 0;
+        z-index: -1;
+    }
+}
+
+
+@keyframes deslocamentoDir {
+
+    from {
+        left: 0;
+        z-index: 12;
+    }
+
+    25% {
+        left: 80px;
+        /* z-index: 12;  NÃO HÁ NECESSIDADE*/
+    }
+
+    50% {
+        left: 100px;
+        /* z-index: 12; NÃO HÁ NECESSIDADE*/
+        /* background-color: yellow;  Exemplo que dei no vídeo*/
+    }
+
+    to {
+        left: 110px;
+        z-index: -1;
+    }
+}
+
+
+/*ANIMAÇÃO CSS*/
+
+@keyframes slidein {
+
+    from {
+        left: 0;
+        width: 40%;
+    }
+
+    25% {
+        left: 5%;
+        width: 50%;
+    }
+
+    50% {
+        left: 25%;
+        width: 60%;
+    }
+
+    75% {
+        left: 45%;
+        width: 50%;
+    }
+
+    to {
+        left: 60%;
+        width: 40%;
+    }
+}
+
+@keyframes slideout {
+
+    from {
+        left: 60%;
+        width: 40%;
+    }
+
+    25% {
+        left: 45%;
+        width: 50%;
+    }
+
+    50% {
+        left: 25%;
+        width: 60%;
+    }
+
+    75% {
+        left: 5%;
+        width: 50%;
+    }
+
+    to {
+        left: 0;
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 1040px) {
+    .content {
+        width: 100%;
+        height: 100%;
+    }
+
+    .content::before {
+        width: 100%;
+        height: 40%;
+        top: 0;
+        border-radius: 0;
+    }
+    .first-content, .second-content {
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .first-column, .second-column {
+        width: 100%;
+    }
+    
+    .sign-in-js .content::before {
+        top: 60%;
+        left: 0;
+        border-radius: 0;
+
+    }
+
+    .form {
+        width: 90%;
+    }
+    
+    /* ANIMAÇÃO MOBILE CSS*/
+
+    @keyframes deslocamentoEsq {
+
+        from {
+            top: 0;
+            opacity: 1;
+            z-index: 12;
+        }
+    
+        25% {
+            top: -80px;
+            opacity: .5;
+            /* z-index: 12; NÃO HÁ NECESSIDADE */
+        }
+    
+        50% {
+            top: -100px;
+            opacity: .2;
+            /* z-index: 12; NÃO HÁ NECESSIDADE */
+        }
+    
+        to {
+            top: -110px;
+            opacity: 0;
+            z-index: -1;
+        }
+    }
+    
+    
+    @keyframes deslocamentoDir {
+    
+        from {
+            top: 0;
+            z-index: 12;
+        }
+    
+        25% {
+            top: 80px;
+            /* z-index: 12;  NÃO HÁ NECESSIDADE*/
+        }
+    
+        50% {
+            top: 100px;
+            /* z-index: 12; NÃO HÁ NECESSIDADE*/
+            /* background-color: yellow;  Exemplo que dei no vídeo*/
+        }
+    
+        to {
+            top: 110px;
+            z-index: -1;
+        }
+    }
+    
+    
+    
+    @keyframes slidein {
+    
+        from {
+            top: 0;
+            height: 40%;
+        }
+    
+        25% {
+            top: 5%;
+            height: 50%;
+        }
+    
+        50% {
+            top: 25%;
+            height: 60%;
+        }
+    
+        75% {
+            top: 45%;
+            height: 50%;
+        }
+    
+        to {
+            top: 60%;
+            height: 40%;
+        }
+    }
+    
+    @keyframes slideout {
+    
+        from {
+            top: 60%;
+            height: 40%;
+        }
+    
+        25% {
+            top: 45%;
+            height: 50%;
+        }
+    
+        50% {
+            top: 25%;
+            height: 60%;
+        }
+    
+        75% {
+            top: 5%;
+            height: 50%;
+        }
+    
+        to {
+            top: 0;
+            height: 40%;
+        }
+    }
+   
+}
+
+@media screen and (max-width: 740px) {
+    .form {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .form {
+        width: 100%;
+    }
+}
+main.cardsLista {
+    display: flex;
+    margin-left: 150px;
+    margin-bottom: 50px;
+    background: var(--cardlistamain-bg);
+}
+
+main.cardsLista section.card {
+    z-index: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background: var(--cardsLista-sec-card-bg);
+    padding: 1rem 1.5rem;
+    border-radius: 8px;
+    max-height: 468px;
+    margin-left: 32px;
+}
+
+main.cardsLista section.card:first-child {
+    margin-left: 0;
+}
+
+main.cardsLista section.card .RadialProgressGuitarra {
+    width: 256px;
+    height: 256px;
+}
+
+main.cardsLista section.card .RadialProgressViolao {
+    width: 256px;
+    height: 256px;
+}
+main.cardsLista section.card .icon {
+    width: 64px;
+    height: 64px;
+}
+
+main.cardsLista section.card img {
+    width: 100%;
+}
+
+main.cardsLista section.card h3 {
+    font-size: 100%;
+    margin: 16px 0;
+    color: var(--cardsLista-letra);
+}
+
+main.cardsLista section.card span {
+    font-weight: 300;
+    max-width: 240px;
+    font-size: 80%;
+    margin-bottom: 16px;
+    color: var(--cardsLista-letra);
+}
+
+main.cardsLista section.card button {
+    padding: 0.5rem 1rem;
+    text-transform: uppercase;
+    border-radius: 32px;
+    border: 0;
+    cursor: pointer;
+    font-size: 80%;
+    font-weight: 500;
+    color: var(--cardsLista-letra);
+    margin-bottom: 16px 0;
+}
+main.cardsLista section.card.guitarra button {
+    background: linear-gradient(to right, var(--cardLista-guitarra-primeiroGradient-bg-color), var(--cardLista-guitarra-segundoGradient-bg-color));
+}
+
+
+main.cardsLista section.card.guitarra {
+    box-shadow: 20px 20px 50px -30px var(--cardLista-guitarra-box-shadow-color);
+    
+}
+
+
+
+.RadialProgressGuitarra {
+    --hue: 220;
+    --holesize: 65%;
+    --track-bg: hsl(233 34% 92%);
+    color: var(--radial50-color);
+    
+    block-size: 50vmin;
+    inline-size: 50vmin;
+    min-inline-size: 100px;
+    min-block-size: 100px;
+    display: grid;
+    place-items: center;
+    position: relative;
+    font-weight: 600;
+    font-size: max(10vmin, 1rem);
+    
+    &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            border-radius: 50%;
+            z-index: -1;
+            background: conic-gradient(
+                hsl(var(--hue) 100% 70%),
+                hsl(var(--hue) 100% 40%),
+                hsl(var(--hue) 100% 70%) var(--progressGuitarra, 0%),
+                var(--track-bg) var(--progress, 0%) 100%
+            );
             
-        <script type="text/javascript">
-            function videoUrl(video){
-                document.getElementById("slider").src = video;
-            }
-        </script>
-    </div>
+            mask-image: radial-gradient(
+                transparent var(--holesize),
+                black calc(var(--holesize) + 0.5px)
+            );
+            
+    }
+}
 
-    <!-- About -->
-
-    <section id="features">
-        <div class="headline-f">O que fazemos</div>
-        <div id="features-container">
-            <div class="feature">
-                <i class="fas fa-music fa-4x"></i>
-                <span class="feature-title" style="margin-left: 8%;">Conteúdo Musical Gratuito</span>
-                <!-- <p>Nada de nada</p> -->
-            </div>
-            <div class="feature">
-                <i class="fas fa-book fa-4x"></i>
-                <span class="feature-title" style="margin-left: 8%;">Cursos</span>
-                <!-- <p>A mesma coisa que os concorrentes </p> -->
-            </div>
-            <div class="feature">
-                <i class="fas fa-tasks fa-4x"></i>
-                <span class="feature-title" style="margin-left: 8%;">Acompanhe seu progresso</span>
-                <!-- <p>Nada</p> -->
-            </div>
-        </div>
-    </section>
-    <section id="goals">
-        <div class="headline">Nossos objetivos</div>
-        <div id="goals-container">
-            <div id="items">
-                <div class="item">
-                    <i class="fas fa-chalkboard-teacher fa-2x"></i>
-                    <p style="margin-left: 3%;">Educação de Qualidade Gratuita!</p>
-                </div>
-                <div class="item">
-                    <i class="fas fa-users fa-2x color-primary"></i>
-                    <p style="margin-left: 3%;">Promover experiências em grupo</p>
-                </div>
-                <div class="item">
-                    <i class="fas fa-briefcase fa-2x"></i>
-                    <p style="margin-left: 3%;">Preparar você para o Mercado de Trabalho</p>
-                </div>
-                <div class="item">
-                    <i class="fas fa-headphones fa-2x"></i>
-                    <p style="margin-left: 3%;">Gerar interesse pela música</p>
-                </div>
-            </div>
-            <div id="goals-container">
-                <div id="items">
-                    <div class="item">
-                        <!-- <i class="fas fa-map-marked fa-2x color-primary"></i> -->
-                        <p>Buscamos auxiliar e trazer acessibilidade, para que todos os públicos tenham um contato mais aprofundado e técnico com a música, por meio da tecnologia, podendo assim começar seu desenvolvimento musical prático e teórico com os conteúdos disponíveis na plataforma que vão do simples ao avançado. A principal razão é mostrar como a liberdade por meio da expressão artística sonora deve ser acessível a todos, para que possam experimentar essa sensação única que só a música pode trazer.</p>
-                    </div>
-            </div>
-        </div>
-    </section>    
- 	<!-- Acessi -->   
-    <div class="fabACESS"  ontouchstart="">
-        <button class="main" >
-            <i class="fas fa-universal-access fa-2x"></i>
-        </button>
-        <ul>
-          <li>
-            <button id="opcao1">
-            </button>
-          </li>
-        </ul>
-    </div>
- 	<!-- TOP -->   
-    <div datascroll="suave" data-anime="scroll">
-        <a href="#topo">
-            <div class="topoB">
-                <i class="fas fa-chevron-circle-up fa-3x"></i>            
-            </div>
-        </a>
-    </div>
-    <!-- Footer -->
-	<footer id="footer">
-		<div class="footer-content">
-			<img src="img/logov2.png" alt="" class="logo" />
-			<ul class="footer-menu">
-				<p>Empresa</p>
-				<li class="footer-menu-item">
-					Sobre
-				</li>
-				<li class="footer-menu-item">
-					Empregos
-				</li>
-			</ul>
-
-			<ul class="footer-menu">
-				<p>Comunidades</p>
-				<li class="footer-menu-item">
-					Para Artistas
-				</li>
-				<li class="footer-menu-item">
-					Desenvolvedores
-				</li>
-				<li class="footer-menu-item">
-					Investidores
-				</li>
-			</ul>
-
-			<ul class="footer-menu">
-				<p>Links úteis</p>
-				<li class="footer-menu-item">
-					Ajuda
-				</li>
-			</ul>
-
-			<div class="socials">
-				<i class="fab fa-instagram"></i>
-				<i class="fab fa-twitter"></i>
-				<i class="fab fa-facebook-f"></i>
-			</div>
-		</div>
-		<div class="footer-info">
-			<ul class="footer-info-items">
-			</ul>
-			<div class="rights">
-				<div class="country">
-					<p>Brasil</p>
-				</div>
-				<p>&copy; 2021 Eng.Comp</p>
-			</div>
-		</div>
-	</footer>
-
-    <!-- Font Awesome -->
-    <script src="https://kit.fontawesome.com/f9e19193d6.js" crossorigin="anonymous"></script>
-
-    <!-- jQuery CDN -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
-        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-
-    <!-- Our JS file -->
-    <script src="js/main.js"></script>
-    <!-- Slider -->
-    <script src="js/slider.js"></script>
-    <!-- Dark mode -->
-    <script src="js/darkmode.js"></script>
-    <!-- TOP -->
-    <script src="js/scroll-animation.js"></script>
-    <script src="js/scroll-suave.js"></script>
-
-</body>
-
-</html>
+/*Dark theme*/
+/* Dark Mode Toggle */
+.theme-switch-wrapper {
+    display: flex;
+    align-items: center;
+    z-index: 100;
+    position: absolute;
+    right: 210px;
+    top: 28px;
+  }
+  
+  .theme-switch-wrapper span {
+    margin-right: 10px;
+    font-size: 1rem;
+  }
+  
+  
+  .theme-switch {
+    display: inline-block;
+    height: 22px;
+    position: relative;
+    width: 50px;
+  }
+  
+  .theme-switch input {
+    display: none;
+  }
+  .slider {
+    background: var(--slider-bg-color);
+    bottom: 0;
+    cursor: pointer;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: 0.4s;
+  }
+  
+  .slider::before {
+    background: var(--slider-before);
+    bottom: 0.5px;
+    content: '';
+    height: 23px;
+    left: 0.3px;
+    position: absolute;
+    transition: 0.4s;
+    width: 23px;
+  }
+  input:checked + .slider {
+    background: var(--primary-color);
+  }
+  
+  input:checked + .slider::before {
+    transform: translateX(26px);
+  }
+  
+  .slider.round {
+    border-radius: 35px;
+  }
+  
+  .slider.round::before {
+    border-radius: 50%;
+  }
+  
+  .fas {
+    font-size: 18px;
+  }
