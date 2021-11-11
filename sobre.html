@@ -90,17 +90,38 @@
 	
 	
  	<!-- Acessi -->   
-    <div class="fabACESS"  ontouchstart="">
-        <button class="main" >
-            <i class="fas fa-universal-access fa-2x"></i>
-        </button>
-        <ul>
-          <li>
-            <button id="opcao1">
-            </button>
-          </li>
-        </ul>
-    </div>
+     <div class="fab-container">
+		<div class="fab fab-icon-holder">
+			<i class="fas fa-universal-access fa-5x"></i>
+		</div>
+
+		<ul class="fab-options">
+			<li>
+				<span class="fab-label">Sobre Acessibilidade</span>
+				<div class="fab-icon-holder">
+					<i class="fas fa-file-alt"></i>
+				</div>
+			</li>
+			<li>
+				<span class="fab-label">Daltônico</span>
+				<div class="fab-icon-holder">
+					<i class="fas fa-low-vision"></i>
+				</div>
+			</li>
+			<li>
+				<span class="fab-label">Aumentar Fonte</span>
+				<div class="fab-icon-holder">
+					<i class="fas fa-chevron-circle-up" onclick="aumentar()"></i>
+				</div>
+			</li>
+			<li>
+				<span class="fab-label">Diminuir Fonte</span>
+				<div class="fab-icon-holder">
+					<i class="fas fa-chevron-circle-down" onclick="diminuir()"></i>
+				</div>
+			</li>
+		</ul>
+	</div>
 
     <!-- Footer -->
 	<footer id="footer">
