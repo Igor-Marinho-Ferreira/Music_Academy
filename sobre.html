@@ -89,39 +89,41 @@
     </section> 
 	
 	
- 	<!-- Acessi -->   
-     <div class="fab-container">
-		<div class="fab fab-icon-holder">
-			<i class="fas fa-universal-access fa-5x"></i>
-		</div>
+<!-- Acessi -->
+    <!-- Vlibras -->
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+          <div class="vw-plugin-top-wrapper"></div>
+        </div>
+      </div>
 
-		<ul class="fab-options">
-			<li>
-				<span class="fab-label">Sobre Acessibilidade</span>
-				<div class="fab-icon-holder">
-					<i class="fas fa-file-alt"></i>
-				</div>
-			</li>
-			<li>
-				<span class="fab-label">Daltônico</span>
-				<div class="fab-icon-holder">
-					<i class="fas fa-low-vision"></i>
-				</div>
-			</li>
-			<li>
-				<span class="fab-label">Aumentar Fonte</span>
-				<div class="fab-icon-holder">
-					<i class="fas fa-chevron-circle-up" onclick="aumentar()"></i>
-				</div>
-			</li>
-			<li>
-				<span class="fab-label">Diminuir Fonte</span>
-				<div class="fab-icon-holder">
-					<i class="fas fa-chevron-circle-down" onclick="diminuir()"></i>
-				</div>
-			</li>
-		</ul>
-	</div>
+     <div class="fab-container">
+        <div class="fab fab-icon-holder">
+            <i class="fas fa-low-vision fa-5x"></i>
+        </div>
+
+        <ul class="fab-options">
+            <li>
+                <span class="fab-label">Aumentar Fonte</span>
+                <div class="fab-icon-holder">
+                    <i class="fas fa-chevron-circle-up" onClick="fonte('a');"></i>
+                </div>
+            </li>
+            <li>
+                <span class="fab-label">Fonte Normal</span>
+                <div class="fab-icon-holder">
+                    <i class="fas fa-equals" onClick="fonte('n');" title="Normal"></i> 
+                </div>
+            </li>
+            <li>
+                <span class="fab-label">Diminuir Fonte</span>
+                <div class="fab-icon-holder">
+                    <i class="fas fa-chevron-circle-down" onClick="fonte('d');"></i>
+                </div>
+            </li>
+        </ul>
+    </div>
 
     <!-- Footer -->
 	<footer id="footer">
@@ -188,6 +190,11 @@
     <script src="js/slider.js"></script>
 	<!-- Dark mode -->
 	<script src="js/darkmode.js"></script>
+	<!-- Vlibras -->
+	<script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+	<script>
+	  new window.VLibras.Widget('https://vlibras.gov.br/app');
+	</script>
 </body>
 
 </html>

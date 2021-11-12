@@ -5,9 +5,19 @@
     padding: 0;
     margin: 0;
 }
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
 body{
     background-color: var(--color-background);
     font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: var(--a-color);
 }
 :root {
     /* Cores dos elementos */
@@ -252,22 +262,6 @@ body{
    --bg-color: #fff;
    --heading-color: #292922;
 }
-  
-html {
-    box-sizing: border-box;
-    scroll-behavior: smooth;
-}
-  
-body {
-    font-family: 'Roboto', sans-serif;
-
-}
-
-a {
-    text-decoration: none;
-    color: var(--a-color);
-}
-
 
 .btn {
     display: inline-block;
@@ -286,7 +280,7 @@ a {
 }
 
 .headline {
-    font-size: 2.2rem;
+    font-size: 35px;
     text-transform: uppercase;
     font-weight: bold;
     text-align: center;
@@ -295,7 +289,7 @@ a {
     color: var(--headline-color);
 }
 .headline-sobre {
-    font-size: 2.2rem;
+    font-size: 35px;
     text-transform: uppercase;
     font-weight: bold;
     text-align: center;
@@ -305,7 +299,7 @@ a {
     padding-top: 25px;
 }
 .headline-aprenda {
-    font-size: 2.2rem;
+    font-size: 35px;
     text-transform: uppercase;
     font-weight: bold;
     text-align: center;
@@ -315,7 +309,7 @@ a {
     padding-top: 25px;
 }
 .headline-lista {
-    font-size: 2.2rem;
+    font-size: 35px;
     text-transform: uppercase;
     font-weight: bold;
     text-align: center;
