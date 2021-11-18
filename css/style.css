@@ -21,6 +21,7 @@ a {
 }
 :root {
     /* Cores dos elementos */
+    --logo--invert: invert(0%);
     --color-background-goalssobre: white;
     --radial50-color: black;
     --cardsLista-letra: black;
@@ -143,6 +144,7 @@ a {
 
 [data-theme='dark'] {
    /* Cores dos elementos */
+   --logo--invert: invert(100%);
    --color-background-goalssobre: #1c1c1c;
    --radial50-color: white;
    --cardsLista-letra: white;
@@ -336,10 +338,14 @@ a {
     justify-content: space-between;
     align-items: center;
 }
-
+.logofooter {
+	height: 50px;
+	width: auto;
+}
 .logo {
 	height: 50px;
 	width: auto;
+    filter:var(--logo--invert);
 }
 
 #navbar-items {
